@@ -5,7 +5,7 @@ def create_table(conn):
     cursor = conn.cursor()
     query = '''
         IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Game')
-        CREATE TABLE Game
+        CREATE TABLE Betrayal.Game
         (
             GameID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             StartDate DATETIMEOFFSET NOT NULL DEFAULT(SYSDATETIMEOFFSET())
@@ -18,7 +18,7 @@ def create_table(conn):
 
 def drop_table(conn):
     cursor = conn.cursor()
-    query = '''DROP TABLE IF EXISTS Game;'''
+    query = '''DROP TABLE IF EXISTS Betrayal.Game;'''
     cursor.execute(query)
     conn.commit()
     cursor.close()

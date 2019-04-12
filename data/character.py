@@ -5,14 +5,14 @@ def create_table(conn):
     cursor = conn.cursor()
     query = '''
         IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Character')
-        CREATE TABLE Character
+        CREATE TABLE Betrayal.Character
         (
             CharacterID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             PlayerID INT NOT NULL FOREIGN KEY
-                REFERENCES Player(PlayerID),
+                REFERENCES Betrayal.Player(PlayerID),
             CharacterName NVARCHAR(32) NOT NULL,
             TileID INT NOT NULL FOREIGN KEY
-                REFERENCES Tile(TileID),
+                REFERENCES Betrayal.Tile(TileID),
             Speed INT NOT NULL,
             Strength INT NOT NULL,
             Sanity INT NOT NULL,
@@ -34,7 +34,7 @@ def create_table(conn):
 
 def drop_table(conn):
     cursor = conn.cursor()
-    query = '''DROP TABLE IF EXISTS Character;'''
+    query = '''DROP TABLE IF EXISTS Betrayal.Character;'''
     cursor.execute(query)
     conn.commit()
     cursor.close()

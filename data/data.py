@@ -11,7 +11,6 @@ def get_connection(server, user, password, db):
 def create_tables(conn, handler):
     for table in handler.keys():
         handler[table]['Create'](conn)
-        print(f'{table}: created')
 
 
 # Drops the tables given in reverse order.
