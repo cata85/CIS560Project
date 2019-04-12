@@ -1,14 +1,43 @@
-from data import data
+from data import card
+from data import character
 from data import game
+from data import item
+from data import monster
+from data import player
+from data import tile
 
 
 # GLOBALS
 HANDLER = {
-           'Game': {
-                    'Create': game.create_table,
-                    'Drop': game.drop_table
-                   }
-          }                                                # Handler for all the tables.
+    'Game': {
+        'Create': game.create_table,
+        'Drop': game.drop_table
+    },
+    'Card': {
+        'Create': card.create_table,
+        'Drop': card.drop_table
+    },
+    'Player': {
+        'Create': player.create_table,
+        'Drop': player.drop_table
+    },
+    'Tile': {
+        'Create': tile.create_table,
+        'Drop': tile.drop_table
+    },
+    'Character': {
+        'Create': character.create_table,
+        'Drop': character.drop_table
+    },
+    'Monster': {
+        'Create': monster.create_table,
+        'Drop': monster.drop_table
+    },
+    'Item': {
+        'Create': item.create_table,
+        'Drop': item.drop_table
+    }
+}                                                          # Handler for all the tables.
 FRESH = True                                               # Start database from scratch.
 SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com' # SQL Server to connect to.
 USER = 'devmaster'                                         # SQL Server user.

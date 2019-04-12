@@ -1,4 +1,3 @@
-from data import game
 import pymssql
 
 
@@ -8,12 +7,15 @@ def get_connection(server, user, password, db):
     return conn
 
 
+# Creates the tables given.
 def create_tables(conn, handler):
     for table in handler.keys():
         handler[table]['Create'](conn)
+        print(f'{table}: created')
 
 
+# Drops the tables given in reverse order.
 def drop_tables(conn, handler):
-    for table in handler.keys():
+    for table in list(handler.keys())[::-1]:
         handler[table]['Drop'](conn)
 
