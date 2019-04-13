@@ -11,7 +11,8 @@ from data import tile
 HANDLER = {
     'Game': {
         'Create': game.create_table,
-        'Drop': game.drop_table
+        'Drop': game.drop_table,
+        'Insert_One': game.insert_one
     },
     'Card': {
         'Create': card.create_table,

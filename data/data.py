@@ -17,3 +17,9 @@ def create_tables(conn, handler):
 def drop_tables(conn, handler):
     for table in list(handler.keys())[::-1]:
         handler[table]['Drop'](conn)
+
+
+# Inserts one row and returns the id created.
+def insert_one(conn, handler_key, row=''):
+    id = handler_key['Insert_One'](conn, row)
+    return id

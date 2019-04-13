@@ -24,3 +24,14 @@ def drop_table(conn):
     cursor.execute(query)
     conn.commit()
     cursor.close()
+
+
+# Inserts one Game and returns that GameID.
+def insert_one(conn, row=''):
+    cursor = conn.cursor()
+    query = '''INSERT INTO Betrayal.Game DEFAULT VALUES;'''
+    cursor.execute(query)
+    conn.commit()
+    game_id = cursor.lastrowid
+    cursor.close()
+    return game_id

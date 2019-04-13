@@ -14,3 +14,9 @@ cursor.execute("SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE='BASE T
 data = cursor.fetchall()
 for row in data:
     print(row)
+
+cursor.execute("SELECT * FROM Betrayal.Game;")
+data = cursor.fetchall()
+for row in data:
+    print(row)
+    
