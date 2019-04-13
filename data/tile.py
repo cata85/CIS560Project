@@ -1,6 +1,7 @@
 import pymssql
 
 
+# Creates the Tile table.
 def create_table(conn):
     cursor = conn.cursor()
     query = '''
@@ -28,9 +29,11 @@ def create_table(conn):
     cursor.close()
 
 
+# Drops the Tile table.
 def drop_table(conn):
     cursor = conn.cursor()
     query = '''DROP TABLE IF EXISTS Betrayal.Tile;'''
     cursor.execute(query)
     conn.commit()
     cursor.close()
+    

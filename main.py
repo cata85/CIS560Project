@@ -17,6 +17,7 @@ def index():
     return render_template('index.html')
 
 
+# Handles the case when the user presses Ctrl+C.
 def signal_handler(sig, frame):
         conn.close()
         sys.exit(0)

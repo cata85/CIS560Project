@@ -17,4 +17,3 @@ def create_tables(conn, handler):
 def drop_tables(conn, handler):
     for table in list(handler.keys())[::-1]:
         handler[table]['Drop'](conn)
-

@@ -1,6 +1,7 @@
 import pymssql
 
 
+# Creates the Item table.
 def create_table(conn):
     cursor = conn.cursor()
     query = '''
@@ -26,10 +27,10 @@ def create_table(conn):
     cursor.close()
 
 
+# Drops the Item table.
 def drop_table(conn):
     cursor = conn.cursor()
     query = '''DROP TABLE IF EXISTS Betrayal.Item;'''
     cursor.execute(query)
     conn.commit()
     cursor.close()
-

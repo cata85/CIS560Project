@@ -1,6 +1,7 @@
 import pymssql
 
 
+# Creates the Card table.
 def create_table(conn):
     cursor = conn.cursor()
     query = '''
@@ -28,6 +29,7 @@ def create_table(conn):
     cursor.close()
 
 
+# Drops the Card table.
 def drop_table(conn):
     cursor = conn.cursor()
     query = '''DROP TABLE IF EXISTS Betrayal.Card;'''

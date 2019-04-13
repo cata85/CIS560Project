@@ -1,6 +1,7 @@
 import pymssql
 
 
+# Creates the Monster table.
 def create_table(conn):
     cursor = conn.cursor()
     query = '''
@@ -18,9 +19,11 @@ def create_table(conn):
     cursor.close()
 
 
+# Drops the Monster table.
 def drop_table(conn):
     cursor = conn.cursor()
     query = '''DROP TABLE IF EXISTS Betrayal.Monster;'''
     cursor.execute(query)
     conn.commit()
     cursor.close()
+    

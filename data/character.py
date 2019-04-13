@@ -1,6 +1,7 @@
 import pymssql
 
 
+# Creates the Character table.
 def create_table(conn):
     cursor = conn.cursor()
     query = '''
@@ -32,6 +33,7 @@ def create_table(conn):
     cursor.close()
 
 
+# Drops the Character table.
 def drop_table(conn):
     cursor = conn.cursor()
     query = '''DROP TABLE IF EXISTS Betrayal.Character;'''

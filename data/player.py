@@ -1,6 +1,7 @@
 import pymssql
 
 
+# Creates the Player table.
 def create_table(conn):
     cursor = conn.cursor()
     query = '''
@@ -24,9 +25,11 @@ def create_table(conn):
     cursor.close()
 
 
+# Drops the Player table.
 def drop_table(conn):
     cursor = conn.cursor()
     query = '''DROP TABLE IF EXISTS Betrayal.Player;'''
     cursor.execute(query)
     conn.commit()
     cursor.close()
+    
