@@ -1,0 +1,33 @@
+{
+    "Cards": [
+        {
+            "Name": "ACUPUNCTURE",
+		    "Type": "Event"
+        }
+    ],
+    "Characters": [
+        {
+            "CharacterName": "Father RhineHardt",
+            "Speed": "3",
+            "Might": "3",
+            "Sanity": "5",
+            "Knowledge": "4"
+        }
+    ],
+    "Items": [
+        {
+            "Name": "BOOMSTICK"
+        }
+    ],
+    "Monsters": [
+        {
+            "Name":	"ZOMBIE LORD"
+        }
+    ],
+    "Tiles": [
+        {
+            "Name": "Empty Tile",
+            "Floor": "N/A"
+        }
+    ]
+}
