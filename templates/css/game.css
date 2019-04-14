@@ -37,10 +37,10 @@ hr.dark{
 }
 
 /* Spash page css  */
-#sessionIDForm{
+#gameIDForm{
   padding-top: 3rem;
 }
-#sessionIDtextbox{
+#gameIDtextbox{
   width: 50%;
   margin: auto;
 }

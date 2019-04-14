@@ -23,3 +23,7 @@ def drop_tables(conn, handler):
 def insert_one(conn, handler_key, row=''):
     id = handler_key['Insert_One'](conn, row)
     return id
+
+def get_one(conn, handler_key, id):
+    response = handler_key['Get_One'](conn, id)
+    return response

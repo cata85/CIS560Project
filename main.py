@@ -18,18 +18,18 @@ def index():
     return render_template('index.html')
 
 
-# Creates a new game.
-@app.route('/create', methods=['GET'])
-def create():
+# Joins an existing game based on the provided game_id or creates a new one if not provided.
+@app.route('/join', methods=['GET', 'POST'])
+def join():
     handler_key = handler['Game']
+    if request.method == 'POST':
+        game_id = request.form['gameIDtextbox']
+        if game_id.isnumeric():
+            response = data.get_one(conn, handler_key, game_id)
+            if response:
+                return redirect(url_for('game', game_id=game_id))
+        return redirect(url_for('index'))
     game_id = data.insert_one(conn, handler_key)
-    print(game_id)
-    return redirect(url_for('game', game_id=game_id))
-
-
-# Joins an existing game based on the provided game_id.
-@app.route('/join/<int:game_id>', methods=['GET'])
-def join(game_id):
     return redirect(url_for('game', game_id=game_id))
 
 

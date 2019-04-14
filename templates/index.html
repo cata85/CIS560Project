@@ -17,17 +17,19 @@
 <div class="container-fluid padding">
 <div class="row text-center">
   <div class="col-md-12">
-    <h1 class="display-4">Session Selection</h1>
+    <h1 class="display-4">Game Selection</h1>
     <hr class="dark">
-    <form class="form-horizontal text-center" id="sessionIDForm">
+    <div class="form-horizontal text-center" id="gameIDForm">
       <div class="form-group">
-          <input type="text" class="form-control" id="sessionIDtextbox" placeholder="SessionID">
+        <form action="/join" method="POST">
+          <input type="text" name="gameIDtextbox" class="form-control" id="gameIDtextbox" placeholder="GameID">
+          <button type="submit" class="btn btn-secondary" id="gameID_Select_btn">SELECT</button></a>
+        </form>
+        <form action="/join" method="GET">
+          <button type="submit" class="btn btn-secondary" id="gameID_New_btn">NEW</button></a>
+        </form>
       </div>
-      <div class="form-group">
-        <a href="game.html"><button type="button" class="btn btn-secondary" id="sessionsID_Select_btn">SELECT</button></a>
-        <a href="game.html"><button type="button" class="btn btn-secondary" id="sessionsID_New_btn">NEW</button></a>
-      </div>
-    </form>
+    </div>
   </div>
 </div>
 </div>

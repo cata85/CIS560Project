@@ -37,3 +37,15 @@ def insert_one(conn, row=''):
     game_id = cursor.lastrowid
     cursor.close()
     return game_id
+
+
+def get_one(conn, game_id):
+    cursor = conn.cursor()
+    query = f'''
+        SELECT * 
+        FROM Betrayal.Game G
+        WHERE G.GameID = {game_id};
+        '''
+    cursor.execute(query)
+    response = cursor.fetchone()
+    return response

@@ -12,7 +12,8 @@ HANDLER = {
     'Game': {
         'Create': game.create_table,
         'Drop': game.drop_table,
-        'Insert_One': game.insert_one
+        'Insert_One': game.insert_one,
+        'Get_One': game.get_one
     },
     'Card': {
         'Create': card.create_table,
