@@ -1,0 +1,87 @@
+
+
+/**general css*/
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  color: #222
+}
+
+body{
+  padding-top: 65px;
+}
+h6{
+  font-size: .8rem;
+}
+p{
+  font-size: .8rem;
+}
+input[type="text"], textarea {
+  outline: none;
+  box-shadow:none !important;
+  border:1px solid #ccc !important;
+}
+hr.dark{
+  border-top: 1px solid #d5d5d5;
+  width: 95%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+.display-4{
+  font-size: 1.2rem;
+  padding-top: 2rem;
+}
+.padding{
+  padding-bottom: 2rem;
+}
+
+/* Spash page css  */
+#sessionIDForm{
+  padding-top: 3rem;
+}
+#sessionIDtextbox{
+  width: 50%;
+  margin: auto;
+}
+
+
+/* Game page css  */
+#gameTable{
+  margin: auto;
+}
+#hrseperate{
+  padding-bottom: 3rem;
+}
+#paddingfix{
+  padding-right: 7rem;
+}
+
+
+
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
