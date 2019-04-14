@@ -7,6 +7,9 @@ html,body{
   font-family: sans-serif;
   color: #222
 }
+form{
+  display: inline;
+}
 
 body{
   padding-top: 65px;
@@ -43,6 +46,9 @@ hr.dark{
 #gameIDtextbox{
   width: 50%;
   margin: auto;
+}
+#textboxpadding{
+  padding-bottom: 1.5rem;
 }
 
 
