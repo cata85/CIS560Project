@@ -1,0 +1,47 @@
+{
+	"monster": {
+		"Name":	"ZOMBIE LORD",
+	}
+	"monster": {
+		"Name":	"PIRATE QUEEN",
+	}
+	"monster": {
+		"Name":	"BANSHEE",
+	}
+	"monster": {
+		"Name":	"CRIMSON JACK",
+	}
+	"monster": {
+		"Name":	"HEAD",
+	}
+	"monster": {
+		"Name":	"DRAGON",
+	}
+	"monster": {
+		"Name":	"FRANKENSTEINS MONSTER",
+	}
+	"monster": {
+		"Name":	"SPIDER",
+	}
+	"monster": {
+		"Name":	"OUROBOROS HEAD",
+	}
+	"monster": {
+		"Name":	"DRACULA",
+	}
+	"monster": {
+		"Name":	"CAT",
+	}
+	"monster": {
+		"Name":	"WITCH",
+	}
+	"monster": {
+		"Name":	"DEMON LORD",
+	}
+	"monster": {
+		"Name":	"MUMMY",
+	}
+	"monster": {
+		"Name":	"DOCTOR",
+	}
+}

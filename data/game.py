@@ -9,7 +9,9 @@ def create_table(conn):
         CREATE TABLE Betrayal.Game
         (
             GameID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
-            StartDate DATETIMEOFFSET NOT NULL DEFAULT(SYSDATETIMEOFFSET())
+            StartDate DATETIMEOFFSET NOT NULL DEFAULT(SYSDATETIMEOFFSET()),
+			Haunt INT NOT NULL DEFAULT(0),
+			TrackValue INT NOT NULL DEFAULT(0)
         );
         '''
     cursor.execute(query)

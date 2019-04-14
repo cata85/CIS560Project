@@ -11,15 +11,7 @@ def create_table(conn):
             ItemID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             TileID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Tile(TileID),
-            CharacterID INT NOT NULL FOREIGN KEY
-                REFERENCES Betrayal.Character(CharacterID),
-            Name NVARCHAR(32) NOT NULL,
-
-            UNIQUE
-            (
-                TileID ASC,
-                CharacterID ASC
-            )
+            Name NVARCHAR(32) NOT NULL
         );
         '''
     cursor.execute(query)

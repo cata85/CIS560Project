@@ -1,0 +1,151 @@
+{
+	"tile": {
+		"Name": "Empty Tile"
+	}
+	"tile": {
+		"Name": "Abandoned Room"
+	}
+	"tile": {
+		"Name": "Attic"
+	}
+	"tile": {
+		"Name": "Balcony"
+	}
+	"tile": {
+		"Name": "Ballroom"
+	}
+	"tile": {
+		"Name": "Basement Landing",
+		"Floor": "Basement"
+	}
+	"tile": {
+		"Name": "Bedroom"
+	}
+	"tile": {
+		"Name": "Bloody Room"
+	}
+	"tile": {
+		"Name": "Catacombs"
+	}
+	"tile": {
+		"Name": "Chapel"
+	}
+	"tile": {
+		"Name": "Charred Room"
+	}
+	"tile": {
+		"Name": "Chasm"
+	}
+	"tile": {
+		"Name": "Coal Chute"
+	}
+	"tile": {
+		"Name": "Collapsed Room"
+	}
+	"tile": {
+		"Name": "Conservatory"
+	}
+	"tile": {
+		"Name": "Creaky Hallway"
+	}
+	"tile": {
+		"Name": "Crypt"
+	}
+	"tile": {
+		"Name": "Dining Room"
+	}
+	"tile": {
+		"Name": "Dusty Hallway"
+	}
+	"tile": {
+		"Name": "Entrance Hall",
+		"Floor": "Ground"
+	}
+	"tile": {
+		"Name": "Foyer",
+		"Floor": "Ground"
+	}
+	"tile": {
+		"Name": "Furnace Room"
+	}
+	"tile": {
+		"Name": "Gallery"
+	}
+	"tile": {
+		"Name": "Game Room"
+	}
+	"tile": {
+		"Name": "Gardens"
+	}
+	"tile": {
+		"Name": "Grand Staircase",
+		"Floor": "Ground"
+	}
+	"tile": {
+		"Name": "Graveyard"
+	}
+	"tile": {
+		"Name": "Gymnasium"
+	}
+	"tile": {
+		"Name": "Junk Room"
+	}
+	"tile": {
+		"Name": "Kitchen"
+	}
+	"tile": {
+		"Name": "Larder"
+	}
+	"tile": {
+		"Name": "Library"
+	}
+	"tile": {
+		"Name": "Master Bedroom"
+	}
+	"tile": {
+		"Name": "Mystic Elevator"
+	}
+	"tile": {
+		"Name": "Operating Laboratory"
+	}
+	"tile": {
+		"Name": "Organ Room"
+	}
+	"tile": {
+		"Name": "Patio"
+	}
+	"tile": {
+		"Name": "Pentagram Chamber"
+	}
+	"tile": {
+		"Name": "Research Laboratory"
+	}
+	"tile": {
+		"Name": "Servants' Quarters"
+	}
+	"tile": {
+		"Name": "Stairs From Basement"
+	}
+	"tile": {
+		"Name": "Statuary Corridor"
+	}
+	"tile": {
+		"Name": "Storeroom"
+	}
+	"tile": {
+		"Name": "Tower"
+	}
+	"tile": {
+		"Name": "Underground Lake"
+	}
+	"tile": {
+		"Name": "Upper Landing",
+		"Floor": "Upper"
+	}
+	"tile": {
+		"Name": "Vault"
+	}
+	"tile": {
+		"Name": "Wine Cellar"
+	}
+}

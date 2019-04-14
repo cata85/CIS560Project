@@ -1,0 +1,12 @@
+{
+	"game":{
+		"StartDate": "2018-12-31 18:00:00",
+		"Haunt": "0",
+		"TrackValue": "0"
+	}
+	"game":{
+		"StartDate": "2019-01-18 18:30:00",
+		"Haunt": "18",
+		"TrackValue": "0"
+	}
+}

@@ -15,10 +15,9 @@ def create_table(conn):
             TileID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Tile(TileID),
             Speed INT NOT NULL,
-            Strength INT NOT NULL,
+            Might INT NOT NULL,
             Sanity INT NOT NULL,
-            Intelligence INT NOT NULL,
-            Birthday DATETIMEOFFSET NOT NULL,
+            Knowledge INT NOT NULL,
 
             UNIQUE
             (

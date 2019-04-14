@@ -12,10 +12,9 @@ def create_table(conn):
             GameID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Game(GameID),
             Name NVARCHAR(32) NOT NULL,
-            Floor NVARCHAR(1) NOT NULL,
-            State NVARCHAR(1) NOT NULL,
-            Text NVARCHAR(128) NOT NULL
-
+            Floor NVARCHAR(8) NOT NULL,
+            State NVARCHAR(10) NOT NULL,
+			
             UNIQUE
             (
                 GameID ASC,

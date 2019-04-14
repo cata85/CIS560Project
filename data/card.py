@@ -12,9 +12,8 @@ def create_table(conn):
             GameID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Game(GameID),
             Name NVARCHAR(32) NOT NULL,
-            Type NVARCHAR(32) NOT NULL,
-            State NVARCHAR(1) NOT NULL,
-            Text NVARCHAR(128) NOT NULL,
+            Type NVARCHAR(5) NOT NULL,
+            State NVARCHAR(10) NOT NULL DEFAULT(N'Not Played'),
 
             UNIQUE
             (
@@ -23,7 +22,8 @@ def create_table(conn):
             )
         );
         '''
-        # TODO: Check all the lenghts of the NVARCHAR's to make sure they are the correct lengths.
+		
+		# TODO: Check all the lenghts of the NVARCHAR's to make sure they are the correct lengths.
     cursor.execute(query)
     conn.commit()
     cursor.close()
