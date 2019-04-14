@@ -1,0 +1,1 @@
+/* Javascript files in static folder. */
