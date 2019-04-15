@@ -33,3 +33,30 @@ def drop_table(conn):
     conn.commit()
     cursor.close()
     
+
+# Inserts one Player and returns that PlayerID.
+def insert_one(conn, row):
+    cursor = conn.cursor()
+    player_id = -1
+    if row:
+        query = f'''
+            INSERT INTO Betrayal.Player VALUES {row};
+            '''
+        cursor.execute(query)
+        conn.commit()
+        player_id = cursor.lastrowid
+    else:
+        print('ERROR: Cannot set default values for table Player. Must give foreign key and name.')
+    cursor.close()
+    return player_id
+
+
+# Inserts many Players into Player table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Player VALUES (%d, %s)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()

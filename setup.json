@@ -943,57 +943,6 @@
                 "TrackValue": "0"
             }
         ],
-        "Players": [
-            [
-                {
-                    "PlayerID": "1",
-                    "GameID": "1",
-                    "PlayerName": "Miriam"
-                },
-                {
-                    "PlayerID": "2",
-                    "GameID": "1",
-                    "PlayerName": "Mike"
-                },
-                {
-                    "PlayerID": "3",
-                    "GameID": "1",
-                    "PlayerName": "Jessica"
-                },
-                {
-                    "PlayerID": "4",
-                    "GameID": "1",
-                    "PlayerName": "Allison"
-                },
-                {
-                    "PlayerID": "5",
-                    "GameID": "1",
-                    "PlayerName": "Steve"
-                }
-            ],
-            [
-                {
-                    "PlayerID": "6",
-                    "GameID": "2",
-                    "PlayerName": "Jordan"
-                },
-                {
-                    "PlayerID": "7",
-                    "GameID": "2",
-                    "PlayerName": "Miriam"
-                },
-                {
-                    "PlayerID": "8",
-                    "GameID": "2",
-                    "PlayerName": "Allison"
-                },
-                {
-                    "PlayerID": "9",
-                    "GameID": "2",
-                    "PlayerName": "Steve"
-                }
-            ]
-        ],
         "Cards": [
             [
                 {
@@ -2306,6 +2255,57 @@
                     "Name": "BITE",
                     "Type": "Omen",
                     "State": "NotPlayed"
+                }
+            ]
+        ],
+        "Players": [
+            [
+                {
+                    "PlayerID": "1",
+                    "GameID": "1",
+                    "PlayerName": "Miriam"
+                },
+                {
+                    "PlayerID": "2",
+                    "GameID": "1",
+                    "PlayerName": "Mike"
+                },
+                {
+                    "PlayerID": "3",
+                    "GameID": "1",
+                    "PlayerName": "Jessica"
+                },
+                {
+                    "PlayerID": "4",
+                    "GameID": "1",
+                    "PlayerName": "Allison"
+                },
+                {
+                    "PlayerID": "5",
+                    "GameID": "1",
+                    "PlayerName": "Steve"
+                }
+            ],
+            [
+                {
+                    "PlayerID": "6",
+                    "GameID": "2",
+                    "PlayerName": "Jordan"
+                },
+                {
+                    "PlayerID": "7",
+                    "GameID": "2",
+                    "PlayerName": "Miriam"
+                },
+                {
+                    "PlayerID": "8",
+                    "GameID": "2",
+                    "PlayerName": "Allison"
+                },
+                {
+                    "PlayerID": "9",
+                    "GameID": "2",
+                    "PlayerName": "Steve"
                 }
             ]
         ],

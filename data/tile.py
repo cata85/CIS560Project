@@ -36,3 +36,30 @@ def drop_table(conn):
     conn.commit()
     cursor.close()
     
+
+# Inserts one Tile and returns that TileID.
+def insert_one(conn, row):
+    cursor = conn.cursor()
+    tile_id = -1
+    if row:
+        query = f'''
+            INSERT INTO Betrayal.Tile VALUES {row};
+            '''
+        cursor.execute(query)
+        conn.commit()
+        tile_id = cursor.lastrowid
+    else:
+        print('ERROR: Cannot set default values for table Tile. Must give foreign key.')
+    cursor.close()
+    return tile_id
+
+
+# Inserts many Tiles into Tile table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Tile VALUES (%d, %s, %s, %s)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()

@@ -27,3 +27,30 @@ def drop_table(conn):
     conn.commit()
     cursor.close()
     
+
+# Inserts one Monster and returns that MonsterID.
+def insert_one(conn, row):
+    cursor = conn.cursor()
+    monster_id = -1
+    if row:
+        query = f'''
+            INSERT INTO Betrayal.Monster VALUES {row};
+            '''
+        cursor.execute(query)
+        conn.commit()
+        monster_id = cursor.lastrowid
+    else:
+        print('ERROR: Cannot set default values for table Monster. Must give foreign key.')
+    cursor.close()
+    return monster_id
+
+
+# Inserts many Monsters into Monster table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Monster VALUES (%d, %s)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()

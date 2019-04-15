@@ -24,6 +24,13 @@ def insert_one(conn, handler_key, row=None):
     id = handler_key['Insert_One'](conn, row)
     return id
 
+
+# Inserts many rows into a given table.
+def insert_many(conn, handler_key, rows=None):
+    handler_key['Insert_Many'](conn, rows)
+
+
+# Gets one row from a table given an id.
 def get_one(conn, handler_key, id):
-    response = handler_key['Get_One'](conn, id)
-    return response
+    row = handler_key['Get_One'](conn, id)
+    return row

@@ -44,6 +44,17 @@ def insert_one(conn, row):
     return game_id
 
 
+# Inserts many Games into Game table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Game VALUES (%s, %d, %d)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()
+
+
 def get_one(conn, game_id):
     cursor = conn.cursor()
     query = f'''
@@ -52,5 +63,6 @@ def get_one(conn, game_id):
         WHERE G.GameID = {game_id};
         '''
     cursor.execute(query)
-    response = cursor.fetchone()
-    return response
+    row = cursor.fetchone()
+    cursor.close()
+    return row

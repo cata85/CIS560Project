@@ -39,3 +39,31 @@ def drop_table(conn):
     cursor.execute(query)
     conn.commit()
     cursor.close()
+
+
+# Inserts one Character and returns that CharacterID.
+def insert_one(conn, row):
+    cursor = conn.cursor()
+    character_id = -1
+    if row:
+        query = f'''
+            INSERT INTO Betrayal.Character VALUES {row};
+            '''
+        cursor.execute(query)
+        conn.commit()
+        character_id = cursor.lastrowid
+    else:
+        print('ERROR: Cannot set default values for table Character. Must give foreign key.')
+    cursor.close()
+    return character_id
+
+
+# Inserts many Characters into Character table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Character VALUES (%d, %s, %d, %d, %d, %d, %d)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()

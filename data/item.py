@@ -26,3 +26,31 @@ def drop_table(conn):
     cursor.execute(query)
     conn.commit()
     cursor.close()
+
+
+# Inserts one Item and returns that ItemID.
+def insert_one(conn, row):
+    cursor = conn.cursor()
+    item_id = -1
+    if row:
+        query = f'''
+            INSERT INTO Betrayal.Item VALUES {row};
+            '''
+        cursor.execute(query)
+        conn.commit()
+        item_id = cursor.lastrowid
+    else:
+        print('ERROR: Cannot set default values for table Item. Must give foreign key.')
+    cursor.close()
+    return item_id
+
+
+# Inserts many Items into Item table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Item VALUES (%d, %s)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()

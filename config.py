@@ -14,31 +14,44 @@ HANDLER = {
         'Create': game.create_table,
         'Drop': game.drop_table,
         'Insert_One': game.insert_one,
+        'Insert_Many': game.insert_many,
         'Get_One': game.get_one
     },
     'Card': {
         'Create': card.create_table,
-        'Drop': card.drop_table
+        'Drop': card.drop_table,
+        'Insert_One': card.insert_one,
+        'Insert_Many': card.insert_many
     },
     'Player': {
         'Create': player.create_table,
-        'Drop': player.drop_table
+        'Drop': player.drop_table,
+        'Insert_One': player.insert_one,
+        'Insert_Many': player.insert_many
     },
     'Tile': {
         'Create': tile.create_table,
-        'Drop': tile.drop_table
+        'Drop': tile.drop_table,
+        'Insert_One': tile.insert_one,
+        'Insert_Many': tile.insert_many
     },
     'Character': {
         'Create': character.create_table,
-        'Drop': character.drop_table
+        'Drop': character.drop_table,
+        'Insert_One': character.insert_one,
+        'Insert_Many': character.insert_many
     },
     'Monster': {
         'Create': monster.create_table,
-        'Drop': monster.drop_table
+        'Drop': monster.drop_table,
+        'Insert_One': monster.insert_one,
+        'Insert_Many': monster.insert_many
     },
     'Item': {
         'Create': item.create_table,
-        'Drop': item.drop_table
+        'Drop': item.drop_table,
+        'Insert_One': item.insert_one,
+        'Insert_Many': item.insert_many
     }
 }                                                          # Handler for all the tables.
 FRESH = True                                               # Start database from scratch.
@@ -47,4 +60,3 @@ SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com' # SQL Server to conne
 USER = 'devmaster'                                         # SQL Server user.
 PASSWORD = 'shaner26mhixon'                                # SQL Server password.
 DB = 'cis560'                                              # SQL Server database to use.
-

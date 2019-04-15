@@ -26,8 +26,8 @@ def join():
     if request.method == 'POST':
         game_id = request.form['gameIDtextbox']
         if game_id.isnumeric():
-            response = data.get_one(conn, handler_key, game_id)
-            if response:
+            row = data.get_one(conn, handler_key, game_id)
+            if row:
                 return redirect(url_for('game', game_id=game_id))
         return redirect(url_for('index'))
     game_id = data.insert_one(conn, handler_key)

@@ -36,3 +36,31 @@ def drop_table(conn):
     cursor.execute(query)
     conn.commit()
     cursor.close()
+
+
+# Inserts one Card and returns that CardID.
+def insert_one(conn, row):
+    cursor = conn.cursor()
+    card_id = -1
+    if row:
+        query = f'''
+            INSERT INTO Betrayal.Card VALUES {row};
+            '''
+        cursor.execute(query)
+        conn.commit()
+        card_id = cursor.lastrowid
+    else:
+        print('ERROR: Cannot set default values for table Card. Must give foreign key.')
+    cursor.close()
+    return card_id
+
+
+# Inserts many Cards into Card table.
+def insert_many(conn, rows):
+    cursor = conn.cursor()
+    if rows:
+        cursor.executemany('''INSERT INTO Betrayal.Card VALUES (%d, %s, %s, %s)''', rows)
+        conn.commit()
+    else:
+        print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
+    cursor.close()
