@@ -20,7 +20,7 @@ def drop_tables(conn, handler):
 
 
 # Inserts one row and returns the id created.
-def insert_one(conn, handler_key, row=''):
+def insert_one(conn, handler_key, row=None):
     id = handler_key['Insert_One'](conn, row)
     return id
 

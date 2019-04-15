@@ -2,6 +2,7 @@ import config
 from data import data
 import flask
 from flask import Flask, render_template, redirect, url_for, request, jsonify
+import helpers
 import json
 import signal
 import sys
@@ -51,7 +52,10 @@ def signal_handler(sig, frame):
 if __name__ == '__main__':
     if config.FRESH:
         data.drop_tables(conn, handler)
-    data.create_tables(conn, handler)
+        data.create_tables(conn, handler)
+        helpers.insert_initial_values(conn, handler, config.INIT)
+    else:
+        data.create_tables(conn, handler)
     signal.signal(signal.SIGINT, signal_handler)
     app.jinja_env.auto_reload = True
     app.config['TEMPLATES_AUTO_RELOAD'] = True
