@@ -34,3 +34,9 @@ def insert_many(conn, handler_key, rows=None):
 def get_one(conn, handler_key, id):
     row = handler_key['Get_One'](conn, id)
     return row
+
+
+# Gets all the rows from a table.
+def get_all(conn, handler_key):
+    rows = handler_key['Get_All'](conn)
+    return rows

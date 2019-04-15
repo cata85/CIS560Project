@@ -36,11 +36,16 @@ def join():
 
 # Generates the requested game page
 @app.route('/game/<int:game_id>', methods=['GET'])
-def game(game_id):
-    # Some 
-    # Logic
-    # Here
-    return render_template('game.html') # TODO: Fill in the params this call will need.
+def game(game_id, rows=None):
+    return render_template('game.html', game_id=game_id, rows=rows)
+
+
+# Selects all the rows for the given table.
+@app.route('/game/<int:game_id>/select/<string:table>', methods=['GET'])
+def select(game_id, table):
+    handler_key = handler[table]
+    rows = data.get_all(conn, handler_key)
+    return redirect(url_for('game', game_id=game_id, rows=rows))
 
 
 # Handles the case when the user presses Ctrl+C.

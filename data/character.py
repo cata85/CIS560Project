@@ -67,3 +67,30 @@ def insert_many(conn, rows):
     else:
         print('ERROR: You must provide row values for the insert_many method! Can not be left to default!')
     cursor.close()
+
+
+# Gets one row given a character_id.
+def get_one(conn, character_id):
+    cursor = conn.cursor()
+    query = f'''
+        SELECT * 
+        FROM Betrayal.Character C
+        WHERE C.CharacterID = {character_id};
+        '''
+    cursor.execute(query)
+    row = cursor.fetchone()
+    cursor.close()
+    return row
+
+
+# Gets all the rows from Character table.
+def get_all(conn):
+    cursor = conn.cursor()
+    query = '''
+        SELECT *
+        FROM Betrayal.Character;
+        '''
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows

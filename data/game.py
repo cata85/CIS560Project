@@ -55,6 +55,7 @@ def insert_many(conn, rows):
     cursor.close()
 
 
+# Gets one row given a game_id.
 def get_one(conn, game_id):
     cursor = conn.cursor()
     query = f'''
@@ -66,3 +67,16 @@ def get_one(conn, game_id):
     row = cursor.fetchone()
     cursor.close()
     return row
+
+
+# Gets all the rows from Game table.
+def get_all(conn):
+    cursor = conn.cursor()
+    query = '''
+        SELECT *
+        FROM Betrayal.Game;
+        '''
+    cursor.execute(query)
+    rows = cursor.fetchall()
+    cursor.close()
+    return rows
