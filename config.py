@@ -42,7 +42,7 @@ HANDLER = {
     }
 }                                                          # Handler for all the tables.
 FRESH = True                                               # Start database from scratch.
-VALUES = helpers.get_values()
+VALUES = helpers.get_values()                              # Gets the default values for the game stored as tuple.
 SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com' # SQL Server to connect to.
 USER = 'devmaster'                                         # SQL Server user.
 PASSWORD = 'shaner26mhixon'                                # SQL Server password.
