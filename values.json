@@ -3,6 +3,438 @@
         {
             "Name": "ACUPUNCTURE",
 		    "Type": "Event"
+        },
+        {
+            "Name": "BURIAL MOUND",
+		    "Type": "Event"
+        },
+        {
+            "Name": "GHOST IN THE MACHINE",
+            "Type": "Event"
+        },
+        {
+            "Name": "LIGHTNING STRIKES",
+            "Type": "Event"
+        },
+        {
+            "Name": "MIST FROM THE WALLS",
+            "Type": "Event"
+        },
+        {
+            "Name": "PHONE CALL",
+            "Type": "Event"
+        },
+        {
+            "Name": "REVOLVING WALL",
+            "Type": "Event"
+        },
+        {
+            "Name": "HIDEOUS SHRIEK",
+            "Type": "Event"
+        },
+        {
+            "Name": "MYSTIC SLIDE",
+            "Type": "Event"
+        },
+        {
+            "Name": "HANGED MEN",
+            "Type": "Event"
+        },
+        {
+            "Name": "THE BECKONING",
+            "Type": "Event"
+        },
+        {
+            "Name": "SOMETHING HIDDEN",
+            "Type": "Event"
+        },
+        {
+            "Name": "GRAVE DIRT",
+            "Type": "Event"
+        },
+        {
+            "Name": "THE WALLS",
+            "Type": "Event"
+        },
+        {
+            "Name": "ROTTEN",
+            "Type": "Event"
+        },
+        {
+            "Name": "IMAGE IN THE MIRROR",
+            "Type": "Event"
+        },
+        {
+            "Name": "MUTANT HOUSEPET",
+            "Type": "Event"
+        },
+        {
+            "Name": "THE WALLS HAVE EYES",
+            "Type": "Event"
+        },
+        {
+            "Name": "WHAT YEAR IS IT?",
+            "Type": "Event"
+        },
+        {
+            "Name": "POSSESSION",
+            "Type": "Event"
+        },
+        {
+            "Name": "IT IS MEANT TO BE",
+            "Type": "Event"
+        },
+        {
+            "Name": "FOOTSTEPS",
+            "Type": "Event"
+        },
+        {
+            "Name": "CREEPY PUPPET",
+            "Type": "Event"
+        },
+        {
+            "Name": "SECRET STAIRS",
+            "Type": "Event"
+        },
+        {
+            "Name": "SILENCE",
+            "Type": "Event"
+        },
+        {
+            "Name": "A MOMENT OF HOPE",
+            "Type": "Event"
+        },
+        {
+            "Name": "NIGHT VIEW",
+            "Type": "Event"
+        },
+        {
+            "Name": "WHAT THE...?",
+            "Type": "Event"
+        },
+        {
+            "Name": "ANGRY BEING",
+            "Type": "Event"
+        },
+        {
+            "Name": "GROUNDSKEEPER",
+            "Type": "Event"
+        },
+        {
+            "Name": "THE VOICE",
+            "Type": "Event"
+        },
+        {
+            "Name": "LIGHTS OUT",
+            "Type": "Event"
+        },
+        {
+            "Name": "WEBS",
+            "Type": "Event"
+        },
+        {
+            "Name": "SOMETHING SLIMY",
+            "Type": "Event"
+        },
+        {
+            "Name": "BURNING MAN",
+            "Type": "Event"
+        },
+        {
+            "Name": "CLOSET DOOR",
+            "Type": "Event"
+        },
+        {
+            "Name": "SMOKE",
+            "Type": "Event"
+        },
+        {
+            "Name": "SKELETONS",
+            "Type": "Event"
+        },
+        {
+            "Name": "CREEPY CRAWLIES",
+            "Type": "Event"
+        },
+        {
+            "Name": "WHOOPS!",
+            "Type": "Event"
+        },
+        {
+            "Name": "LOCKED SAFE",
+            "Type": "Event"
+        },
+        {
+            "Name": "JONAH'S TURN",
+            "Type": "Event"
+        },
+        {
+            "Name": "THE LFET HAND",
+            "Type": "Event"
+        },
+        {
+            "Name": "FLYTRAP",
+            "Type": "Event"
+        },
+        {
+            "Name": "MISTY ARCH",
+            "Type": "Event"
+        },
+        {
+            "Name": "CONTRACT",
+            "Type": "Event"
+        },
+        {
+            "Name": "SPIDER",
+            "Type": "Event"
+        },
+        {
+            "Name": "DRIP... DRIP... DRIP...",
+            "Type": "Event"
+        },
+        {
+            "Name": "SHRIEKING WIND",
+            "Type": "Event"
+        },
+        {
+            "Name": "DISQUIETING SOUNDS",
+            "Type": "Event"
+        },
+        {
+            "Name": "THE LOST ONE",
+            "Type": "Event"
+        },
+        {
+            "Name": "FUNERAL",
+            "Type": "Event"
+        },
+        {
+            "Name": "BLOODY VISION",
+            "Type": "Event"
+        },
+        {
+            "Name": "DEBRIS",
+            "Type": "Event"
+        },
+        {
+            "Name": "SECRET PASSAGE",
+            "Type": "Event"
+        },
+        {
+            "Name": "BOOMSTICK",
+            "Type": "Item"
+        },
+        {
+            "Name": "LUCKY STONE",
+            "Type": "Item"
+        },
+        {
+            "Name": "SACRIFICIAL DAGGER",
+            "Type": "Item"
+        },
+        {
+            "Name": "SMELLING SALTS",
+            "Type": "Item"
+        },
+        {
+            "Name": "BOTTLE",
+            "Type": "Item"
+        },
+        {
+            "Name": "HEALING SALVE",
+            "Type": "Item"
+        },
+        {
+            "Name": "REVOLVER",
+            "Type": "Item"
+        },
+        {
+            "Name": "AMULET OF THE AGES",
+            "Type": "Item"
+        },
+        {
+            "Name": "RABBIT'S FOOT",
+            "Type": "Item"
+        },
+        {
+            "Name": "DARK DICE",
+            "Type": "Item"
+        },
+        {
+            "Name": "TEAPOT",
+            "Type": "Item"
+        },
+        {
+            "Name": "ADRENALINE SHOT",
+            "Type": "Item"
+        },
+        {
+            "Name": "BELL",
+            "Type": "Item"
+        },
+        {
+            "Name": "PUZZLE BOX",
+            "Type": "Item"
+        },
+        {
+            "Name": "PICKPOCKET'S GLOVES",
+            "Type": "Item"
+        },
+        {
+            "Name": "CAMCORDER",
+            "Type": "Item"
+        },
+        {
+            "Name": "BLUEPRINT",
+            "Type": "Item"
+        },
+        {
+            "Name": "LOCKET",
+            "Type": "Item"
+        },
+        {
+            "Name": "DEVICE",
+            "Type": "Item"
+        },
+        {
+            "Name": "CHAINSAW",
+            "Type": "Item"
+        },
+        {
+            "Name": "CEREMONIAL ROBE",
+            "Type": "Item"
+        },
+        {
+            "Name": "CHALK",
+            "Type": "Item"
+        },
+        {
+            "Name": "MUSIC BOX",
+            "Type": "Item"
+        },
+        {
+            "Name": "DYNAMITE",
+            "Type": "Item"
+        },
+        {
+            "Name": "AXE",
+            "Type": "Item"
+        },
+        {
+            "Name": "ANGEL FEATHER",
+            "Type": "Item"
+        },
+        {
+            "Name": "IDOL",
+            "Type": "Item"
+        },
+        {
+            "Name": "MEDICAL KIT",
+            "Type": "Item"
+        },
+        {
+            "Name": "ARMOR",
+            "Type": "Item"
+        },
+        {
+            "Name": "SNAKE OIL",
+            "Type": "Item"
+        },
+        {
+            "Name": "EFFIGY",
+            "Type": "Item"
+        },
+        {
+            "Name": "BLOOD DAGGER",
+            "Type": "Item"
+        },
+        {
+            "Name": "CANDLE",
+            "Type": "Item"
+        },
+        {
+            "Name": "GIRL",
+            "Type": "Omen"
+        },
+        {
+            "Name": "HOLY SYMBOL",
+            "Type": "Omen"
+        },
+        {
+            "Name": "RING",
+            "Type": "Omen"
+        },
+        {
+            "Name": "DOG",
+            "Type": "Omen"
+        },
+        {
+            "Name": "MASK",
+            "Type": "Omen"
+        },
+        {
+            "Name": "MEDALLION",
+            "Type": "Omen"
+        },
+        {
+            "Name": "KEY",
+            "Type": "Omen"
+        },
+        {
+            "Name": "BLOODSTONE",
+            "Type": "Omen"
+        },
+        {
+            "Name": "LETTER",
+            "Type": "Omen"
+        },
+        {
+            "Name": "PHOTOGRAPH",
+            "Type": "Omen"
+        },
+        {
+            "Name": "SPIRIT BOARD",
+            "Type": "Omen"
+        },
+        {
+            "Name": "CRYSTAL BALL",
+            "Type": "Omen"
+        },
+        {
+            "Name": "CAT",
+            "Type": "Omen"
+        },
+        {
+            "Name": "MADMAN",
+            "Type": "Omen"
+        },
+        {
+            "Name": "ROPE",
+            "Type": "Omen"
+        },
+        {
+            "Name": "BOX",
+            "Type": "Omen"
+        },
+        {
+            "Name": "BOOK",
+            "Type": "Omen"
+        },
+        {
+            "Name": "SKULL",
+            "Type": "Omen"
+        },
+        {
+            "Name": "SPEAR",
+            "Type": "Omen"
+        },
+        {
+            "Name": "VIAL",
+            "Type": "Omen"
+        },
+        {
+            "Name": "BITE",
+            "Type": "Omen"
         }
     ],
     "Characters": [
