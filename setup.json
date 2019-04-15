@@ -994,6 +994,1321 @@
                 }
             ]
         ],
+        "Cards": [
+            [
+                {
+                    "GameID": "1",
+                    "Name": "ACUPUNCTURE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",	
+                    "Name": "BURIAL MOUND",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "GHOST IN THE MACHINE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "LIGHTNING STRIKES",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MIST FROM THE WALLS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "PHONE CALL",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "CardID": "7",
+                    "GameID": "1",
+                    "Name": "REVOLVING WALL",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "HIDEOUS SHRIEK",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MYSTIC SLIDE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "HANGED MEN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "THE BECKONING",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SOMETHING HIDDEN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "GRAVE DIRT",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "THE WALLS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "ROTTEN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "IMAGE IN THE MIRROR",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MUTANT HOUSEPET",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "THE WALLS HAVE EYES",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "WHAT YEAR IS IT?",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "POSSESSION",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "IT IS MEANT TO BE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "FOOTSTEPS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CREEPY PUPPET",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SECRET STAIRS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SILENCE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "A MOMENT OF HOPE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "NIGHT VIEW",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "WHAT THE...?",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "ANGRY BEING",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "GROUNDSKEEPER",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "THE VOICE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "LIGHTS OUT",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "WEBS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SOMETHING SLIMY",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BURNING MAN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CLOSET DOOR",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SMOKE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SKELETONS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CREEPY CRAWLIES",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "WHOOPS!",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "LOCKED SAFE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "JONAH'S TURN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "THE LFET HAND",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "FLYTRAP",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MISTY ARCH",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CONTRACT",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SPIDER",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DRIP... DRIP... DRIP...",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SHRIEKING WIND",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DISQUIETING SOUNDS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "THE LOST ONE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "FUNERAL",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BLOODY VISION",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DEBRIS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SECRET PASSAGE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BOOMSTICK",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "LUCKY STONE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SACRIFICIAL DAGGER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SMELLING SALTS",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BOTTLE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "HEALING SALVE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "REVOLVER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "AMULET OF THE AGES",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "RABBIT'S FOOT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DARK DICE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "TEAPOT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "ADRENALINE SHOT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BELL",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "PUZZLE BOX",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "PICKPOCKET'S GLOVES",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CAMCORDER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BLUEPRINT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "LOCKET",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DEVICE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CHAINSAW",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CEREMONIAL ROBE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CHALK",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MUSIC BOX",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DYNAMITE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "AXE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "ANGEL FEATHER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "IDOL",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MEDICAL KIT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "ARMOR",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SNAKE OIL",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "EFFIGY",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BLOOD DAGGER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CANDLE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "GIRL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "HOLY SYMBOL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "RING",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "DOG",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MASK",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MEDALLION",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "KEY",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BLOODSTONE",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "LETTER",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "PHOTOGRAPH",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SPIRIT BOARD",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CRYSTAL BALL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "CAT",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "MADMAN",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "ROPE",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BOX",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BOOK",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SKULL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "SPEAR",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "VIAL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "1",
+                    "Name": "BITE",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                }
+            ],
+            [
+                {
+                    "GameID": "2",
+                    "Name": "ACUPUNCTURE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",	
+                    "Name": "BURIAL MOUND",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "GHOST IN THE MACHINE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "LIGHTNING STRIKES",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MIST FROM THE WALLS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "PHONE CALL",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "REVOLVING WALL",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "HIDEOUS SHRIEK",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MYSTIC SLIDE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "HANGED MEN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "THE BECKONING",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SOMETHING HIDDEN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "GRAVE DIRT",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "THE WALLS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "ROTTEN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "IMAGE IN THE MIRROR",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MUTANT HOUSEPET",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "THE WALLS HAVE EYES",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "WHAT YEAR IS IT?",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "POSSESSION",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "IT IS MEANT TO BE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "FOOTSTEPS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CREEPY PUPPET",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SECRET STAIRS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SILENCE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "A MOMENT OF HOPE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "NIGHT VIEW",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "WHAT THE...?",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "ANGRY BEING",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "GROUNDSKEEPER",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "THE VOICE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "LIGHTS OUT",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "WEBS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SOMETHING SLIMY",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BURNING MAN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CLOSET DOOR",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SMOKE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SKELETONS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CREEPY CRAWLIES",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "WHOOPS!",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "LOCKED SAFE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "JONAH'S TURN",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "THE LFET HAND",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "FLYTRAP",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MISTY ARCH",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CONTRACT",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SPIDER",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DRIP... DRIP... DRIP...",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SHRIEKING WIND",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DISQUIETING SOUNDS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "THE LOST ONE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "FUNERAL",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BLOODY VISION",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DEBRIS",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SECRET PASSAGE",
+                    "Type": "Event",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BOOMSTICK",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "LUCKY STONE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SACRIFICIAL DAGGER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SMELLING SALTS",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BOTTLE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "HEALING SALVE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "REVOLVER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "AMULET OF THE AGES",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "RABBIT'S FOOT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DARK DICE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "TEAPOT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "ADRENALINE SHOT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BELL",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "PUZZLE BOX",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "PICKPOCKET'S GLOVES",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CAMCORDER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BLUEPRINT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "LOCKET",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DEVICE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CHAINSAW",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CEREMONIAL ROBE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CHALK",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MUSIC BOX",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DYNAMITE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "AXE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "ANGEL FEATHER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "IDOL",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MEDICAL KIT",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "ARMOR",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SNAKE OIL",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "EFFIGY",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BLOOD DAGGER",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CANDLE",
+                    "Type": "Item",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "GIRL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "HOLY SYMBOL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "RING",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "DOG",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MASK",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MEDALLION",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "KEY",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BLOODSTONE",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "LETTER",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "PHOTOGRAPH",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SPIRIT BOARD",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CRYSTAL BALL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "CAT",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "MADMAN",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "ROPE",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BOX",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BOOK",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SKULL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "SPEAR",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "VIAL",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                },
+                {
+                    "GameID": "2",
+                    "Name": "BITE",
+                    "Type": "Omen",
+                    "State": "NotPlayed"
+                }
+            ]
+        ],
         "Tiles": [
             [
                 {
@@ -1657,6 +2972,125 @@
                     "State": "Played"
                 }
             ]
+        ],
+        "Characters": [
+            {
+                "PlayerID": "1",
+                "CharacterName": "Father RhineHardt",
+                "TileID": "66",
+                "Speed": "3",
+                "Might": "3",
+                "Sanity": "5",
+                "Knowledge": "4"
+            },
+            {
+                "PlayerID": "2",
+                "CharacterName": "Vivian Lopez",
+                "TileID": "66",
+                "Speed": "4",
+                "Might": "3",
+                "Sanity": "3",
+                "Knowledge": "4"
+            },
+            {
+                "PlayerID": "3",
+                "CharacterName": "Peter Akimoto",
+                "TileID": "66",
+                "Speed": "4",
+                "Might": "3",
+                "Sanity": "4",
+                "Knowledge": "3"
+            },
+            {
+                "PlayerID": "4",
+                "CharacterName": "Darrin Flash Williams",
+                "TileID": "66",
+                "Speed": "5",
+                "Might": "3",
+                "Sanity": "3",
+                "Knowledge": "3"
+            },
+            {
+                "PlayerID": "5",
+                "CharacterName": "Heather Granville",
+                "TileID": "66",
+                "Speed": "3",
+                "Might": "3",
+                "Sanity": "3",
+                "Knowledge": "5"
+            },
+            {
+                "PlayerID": "6",
+                "CharacterName": "Missy Dubourde",
+                "TileID": "48",
+                "Speed": "3",
+                "Might": "4",
+                "Sanity": "3",
+                "Knowledge": "4"
+            },
+            {
+                "PlayerID": "7",
+                "CharacterName": "Professor Longfellow",
+                "TileID": "90",
+                "Speed": "4",
+                "Might": "3",
+                "Sanity": "3",
+                "Knowledge": "5"
+            },
+            {
+                "PlayerID": "8",
+                "CharacterName": "Madame Zostra",
+                "TileID": "49",
+                "Speed": "3",
+                "Might": "4",
+                "Sanity": "3",
+                "Knowledge": "4"
+            },
+            {
+                "PlayerID": "9",
+                "CharacterName": "Brandon Jaspers",
+                "TileID": "77",
+                "Speed": "3",
+                "Might": "4",
+                "Sanity": "4",
+                "Knowledge": "3"
+            }
+        ],
+        "Monsters": [
+            {
+                "TileID": "73",
+                "Name": "Dracula"
+            }
+        ],
+        "Items": [
+            {
+                "TileID": "48",
+                "Name": "BOOMSTICK"
+            },
+            {
+                "TileID": "82",
+                "Name": "BELL"
+            },
+            {
+                "TileID": "77",
+                "Name": "TEAPOT"
+            },
+            {
+                "TileID": "66",
+                "Name": "DYNAMITE"
+            },
+            {
+                "TileID": "62",
+                "Name": "CHAINSAW"
+            },
+            {
+                "TileID": "90",
+                "Name": "IDOL"
+            },
+            {
+                "TileID": "48",
+                "Name": "MEDICAL KIT"
+            }
         ]
     }
 }
