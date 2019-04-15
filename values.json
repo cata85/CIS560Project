@@ -444,17 +444,319 @@
             "Might": "3",
             "Sanity": "5",
             "Knowledge": "4"
+        },
+        {
+            "CharacterName": "Professor Longfellow",
+            "Speed": "4",
+            "Might": "3",
+            "Sanity": "3",
+            "Knowledge": "5"
+        },
+        {
+            "CharacterName": "Vivian Lopez",
+            "Speed": "4",
+            "Might": "3",
+            "Sanity": "3",
+            "Knowledge": "4"
+        },
+        {
+            "CharacterName": "Madame Zostra",
+            "Speed": "3",
+            "Might": "4",
+            "Sanity": "3",
+            "Knowledge": "4"
+        },
+        {
+            "CharacterName": "Peter Akimoto",
+            "Speed": "4",
+            "Might": "3",
+            "Sanity": "4",
+            "Knowledge": "3"
+        },
+        {
+            "CharacterName": "Brandon Jaspers",
+            "Speed": "3",
+            "Might": "4",
+            "Sanity": "4",
+            "Knowledge": "3"
+        },
+        {
+            "CharacterName": "Darrin Flash Williams",
+            "Speed": "5",
+            "Might": "3",
+            "Sanity": "3",
+            "Knowledge": "3"
+        },
+        {
+            "CharacterName": "Ox Bellows",
+            "Speed": "5",
+            "Might": "3",
+            "Sanity": "3",
+            "Knowledge": "3"
+        },
+        {
+            "CharacterName": "Heather Granville",
+            "Speed": "3",
+            "Might": "3",
+            "Sanity": "3",
+            "Knowledge": "5"
+        },
+        {
+            "CharacterName": "Jenny LeClerc",
+            "Speed": "4",
+            "Might": "3",
+            "Sanity": "5",
+            "Knowledge": "3"
+        },
+        {
+            "CharacterName": "Zoe Ingstrom",
+            "Speed": "4",
+            "Might": "4",
+            "Sanity": "3",
+            "Knowledge": "3"
+        },
+        {
+            "CharacterName": "Missy Dubourde",
+            "Speed": "3",
+            "Might": "4",
+            "Sanity": "3",
+            "Knowledge": "4"
         }
     ],
     "Items": [
         {
             "Name": "BOOMSTICK"
+        },
+        {
+            "Name": "LUCKY STONE"
+        },
+        {
+            "Name": "SACRIFICIAL DAGGER"
+        },
+        {
+            "Name": "SMELLING SALTS"
+        },
+        {
+            "Name": "BOTTLE"
+        },
+        {
+            "Name": "HEALING SALVE"
+        },
+        {
+            "Name": "REVOLVER"
+        },
+        {
+            "Name": "AMULET OF THE AGES"
+        },
+        {
+            "Name": "RABBIT'S FOOT"
+        },
+        {
+            "Name": "DARK DICE"
+        },
+        {
+            "Name": "TEAPOT"
+        },
+        {
+            "Name": "ADRENALINE SHOT"
+        },
+        {
+            "Name": "BELL"
+        },
+        {
+            "Name": "PUZZLE BOX"
+        },
+        {
+            "Name": "PICKPOCKET'S GLOVES"
+        },
+        {
+            "Name": "CAMCORDER"
+        },
+        {
+            "Name": "BLUEPRINT"
+        },
+        {
+            "Name": "LOCKET"
+        },
+        {
+            "Name": "DEVICE"
+        },
+        {
+            "Name": "CHAINSAW"
+        },
+        {
+            "Name": "CEREMONIAL ROBE"
+        },
+        {
+            "Name": "CHALK"
+        },
+        {
+            "Name": "MUSIC BOX"
+        },
+        {
+            "Name": "DYNAMITE"
+        },
+        {
+            "Name": "AXE"
+        },
+        {
+            "Name": "ANGEL FEATHER"
+        },
+        {
+            "Name": "IDOL"
+        },
+        {
+            "Name": "MEDICAL KIT"
+        },
+        {
+            "Name": "ARMOR"
+        },
+        {
+            "Name": "SNAKE OIL"
+        },
+        {
+            "Name": "EFFIGY"
+        },
+        {
+            "Name": "BLOOD DAGGER"
+        },
+        {
+            "Name": "CANDLE"
+        },
+        {
+            "Name": "GIRL"
+        },
+        {
+            "Name": "HOLY SYMBOL"
+        },
+        {
+            "Name": "RING"
+        },
+        {
+            "Name": "DOG"
+        },
+        {
+            "Name": "MASK"
+        },
+        {
+            "Name": "MEDALLION"
+        },
+        {
+            "Name": "KEY"
+        },
+        {
+            "Name": "BLOODSTONE"
+        },
+        {
+            "Name": "LETTER"
+        },
+        {
+            "Name": "PHOTOGRAPH"
+        },
+        {
+            "Name": "SPIRIT BOARD"
+        },
+        {
+            "Name": "CRYSTAL BALL"
+        },
+        {
+            "Name": "CAT"
+        },
+        {
+            "Name": "MADMAN"
+        },
+        {
+            "Name": "ROPE"
+        },
+        {
+            "Name": "BOX"
+        },
+        {
+            "Name": "BOOK"
+        },
+        {
+            "Name": "SKULL"
+        },
+        {
+            "Name": "SPEAR"
+        },
+        {
+            "Name": "VIAL"
+        },
+        {
+            "Name": "BITE"
         }
     ],
     "Monsters": [
         {
             "Name":	"ZOMBIE LORD"
-        }
+        },
+        {
+            "Name":	"PIRATE QUEEN"
+        },
+        {
+            "Name":	"BANSHEE"
+        },
+        {
+            "Name":	"CRIMSON JACK"
+        },
+        {
+            "Name":	"HEAD"
+        },
+        {
+            "Name":	"DRAGON"
+        },
+        {
+            "Name":	"FRANKENSTEINS MONSTER"
+        },
+        {
+            "Name":	"SPIDER"
+        },
+        {
+            "Name":	"OUROBOROS HEAD"
+        },
+        {
+            "Name":	"DRACULA"
+        },
+        {
+            "Name":	"CAT"
+        },
+        {
+            "Name":	"WITCH"
+        },
+        {
+            "Name":	"DEMON LORD"
+        },
+        {
+            "Name":	"MUMMY"
+        },
+        {
+            "Name":	"DOCTOR"
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
+        {
+
+        },
     ],
     "Tiles": [
         {
