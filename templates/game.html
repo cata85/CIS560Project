@@ -23,46 +23,58 @@
    </h1>
    <hr class="dark" id="hrseperate">
    <div id="paddingfix">
-   <form class="form-horizontal text-right" id="gameForm">
+   <div id="gameForm">
      <table id="gameTable">
        <tr>
          <td><h4>Players:</h4></td>
-         <td><button type="button" class="btn btn-secondary" id="player_Select_btn">SELECT</button></td>
+         <form action="/game/{{int:game_id}}/select/Player" method="GET">
+           <td><button type="button" class="btn btn-secondary" id="player_Select_btn">SELECT</button></td>
+         </form>
          <td><button type="button" class="btn btn-secondary" id="player_Insert_btn">INSERT</button></td>
          <td><button type="button" class="btn btn-secondary" id="player_Update_btn">UPDATE</button></td>
        </tr>
        <tr>
          <td><h4>Characters:</h4></td>
-         <td><button type="button" class="btn btn-secondary" id="character_Select_btn">SELECT</button></td>
+         <form action="/game/{{int:game_id}}/select/Character" method="GET">
+          <td><button type="button" class="btn btn-secondary" id="character_Select_btn">SELECT</button></td>
+         </form>
          <td><button type="button" class="btn btn-secondary" id="character_Insert_btn">INSERT</button></td>
          <td><button type="button" class="btn btn-secondary" id="character_Update_btn">UPDATE</button></td>
        </tr>
        <tr>
          <td><h4>Tiles:</h4></td>
-         <td><button type="button" class="btn btn-secondary" id="tile_Select_btn">SELECT</button></td>
+         <form action="/game/{{int:game_id}}/select/Tile" method="GET">
+          <td><button type="button" class="btn btn-secondary" id="tile_Select_btn">SELECT</button></td>
+         </form>
          <td><button type="button" class="btn btn-secondary" id="tile_Insert_btn" disabled="true">INSERT</button></td>
          <td><button type="button" class="btn btn-secondary" id="tile_Update_btn">UPDATE</button></td>
        </tr>
        <tr>
          <td><h4>Objects:</h4></td>
-         <td><button type="button" class="btn btn-secondary" id="object_Select_btn">SELECT</button></td>
+         <form action="/game/{{int:game_id}}/select/Object" method="GET">
+          <td><button type="button" class="btn btn-secondary" id="object_Select_btn">SELECT</button></td>
+         </form>
          <td><button type="button" class="btn btn-secondary" id="object_Insert_btn">INSERT</button></td>
          <td><button type="button" class="btn btn-secondary" id="object_Update_btn">UPDATE</button></td>
        </tr>
        <tr>
          <td><h4>Monsters:</h4></td>
-         <td><button type="button" class="btn btn-secondary" id="monster_Select_btn">SELECT</button></td>
+         <form action="/game/{{int:game_id}}/select/Monster" method="GET">
+          <td><button type="button" class="btn btn-secondary" id="monster_Select_btn">SELECT</button></td>
+         </form>
          <td><button type="button" class="btn btn-secondary" id="monster_Insert_btn">INSERT</button></td>
          <td><button type="button" class="btn btn-secondary" id="monster_Update_btn">UPDATE</button></td>
        </tr>
        <tr>
          <td><h4>Cards:</h4></td>
-         <td><button type="button" class="btn btn-secondary" id="card_Select_btn">SELECT</button></td>
+         <form action="/game/{{int:game_id}}/select/Card" method="GET">
+          <td><button type="button" class="btn btn-secondary" id="card_Select_btn">SELECT</button></td>
+         </form>
          <td><button type="button" class="btn btn-secondary" id="card_Insert_btn" disabled="true">INSERT</button></td>
          <td><button type="button" class="btn btn-secondary" id="card_Update_btn">UPDATE</button></td>
        </tr>
     </table>
-   </form>
+  </div>
  </div>
  </div>
 </div>
