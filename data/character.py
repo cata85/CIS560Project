@@ -94,3 +94,15 @@ def get_all(conn):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+# Updates for a specific character in the character table
+def update(conn, character_id, column):
+    cursor = conn.cursor()
+    query = f'''
+        UPDATE Betrayal.Character
+        SET {column}
+        WHERE CharacterID = character_id
+        '''
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()

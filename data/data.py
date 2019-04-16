@@ -40,3 +40,7 @@ def get_one(conn, handler_key, id):
 def get_all(conn, handler_key):
     rows = handler_key['Get_All'](conn)
     return rows
+
+def update(conn, handler_key, id, column):
+    handler_key['Update'](conn, id, column)
+    

@@ -48,7 +48,8 @@ HANDLER = {
         'Insert_One': character.insert_one,
         'Insert_Many': character.insert_many,
         'Get_One': character.get_one,
-        'Get_All': character.get_all
+        'Get_All': character.get_all,
+        'Update': character.update
     },
     'Monster': {
         'Create': monster.create_table,
