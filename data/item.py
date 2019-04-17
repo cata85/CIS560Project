@@ -71,11 +71,12 @@ def get_one(conn, item_id):
 
 
 # Gets all the rows from Item table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Item;
+        FROM Betrayal.Item
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

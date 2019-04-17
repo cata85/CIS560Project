@@ -71,11 +71,12 @@ def get_one(conn, monster_id):
 
 
 # Gets all the rows from Monster table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Monster;
+        FROM Betrayal.Monster
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

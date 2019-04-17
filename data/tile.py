@@ -80,11 +80,12 @@ def get_one(conn, tile_id):
 
 
 # Gets all the rows from Tile table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Tile;
+        FROM Betrayal.Tile
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

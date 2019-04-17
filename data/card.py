@@ -81,11 +81,12 @@ def get_one(conn, card_id):
 
 
 # Gets all the rows from Card table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Card;
+        FROM Betrayal.Card
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

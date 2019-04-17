@@ -37,8 +37,8 @@ def get_one(conn, handler_key, id):
 
 
 # Gets all the rows from a table.
-def get_all(conn, handler_key, id):
-    rows = handler_key['Get_All'](conn, id)
+def get_all(conn, handler_key, conditional=''):
+    rows = handler_key['Get_All'](conn, conditional)
     return rows
 
 
