@@ -94,12 +94,12 @@ def get_all(conn, conditional):
 
 
 # Updates an element for a specific Tile
-# the 'column' parameter will be a string Example: "State = N'Played'"
-def update(conn, tile_id, column):
+# the 'setter' parameter will be a string Example: "State = N'Played'"
+def update(conn, tile_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Tile
-        SET {column}
+        SET {setter}
         WHERE TileID = tile_id
         '''
     cursor.execute(query)

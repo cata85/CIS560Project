@@ -85,12 +85,12 @@ def get_all(conn, conditional):
 
 
 # Updates an element for a specific Item
-# the 'column' parameter will be a string Example: "TileID = 14"
-def update(conn, item_id, column):
+# the 'setter' parameter will be a string Example: "TileID = 14"
+def update(conn, item_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Monster
-        SET {column}
+        SET {setter}
         WHERE ItemID = item_id
         '''
     cursor.execute(query)

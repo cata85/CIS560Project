@@ -98,11 +98,11 @@ def get_all(conn, conditional):
 
 
 # Updates an element for a specific CharacterID
-def update(conn, character_id, column):
+def update(conn, character_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Character
-        SET {column}
+        SET {setter}
         WHERE CharacterID = character_id
         '''
     cursor.execute(query)

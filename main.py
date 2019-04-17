@@ -49,6 +49,15 @@ def select(game_id, table):
     return redirect(url_for('game', game_id=game_id, rows=rows))
 
 
+# Updates the selected row for a given table.
+@app.route('/game/<int:game_id>/update/<string:table>', methods=['POST'])
+def update(game_id, table):
+    handler_key = handler[table]
+    setter = request.form['setterTextbox']
+    data.update(conn, handler_key, game_id, setter)
+    return redirect(url_for('game', game_id=game_id))
+
+
 # Handles the case when the user presses Ctrl+C.
 def signal_handler(sig, frame):
         conn.close()

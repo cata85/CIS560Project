@@ -84,12 +84,12 @@ def get_all(conn, conditional):
 
 
 # Updates an element for a specific Game
-# the 'column' parameter will be a string Example: "HauntID = 23"
-def update(conn, game_id, column):
+# the 'setter' parameter will be a string Example: "HauntID = 23"
+def update(conn, game_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Game
-        SET {column}
+        SET {setter}
         WHERE GameID = game_id
         '''
     cursor.execute(query)
