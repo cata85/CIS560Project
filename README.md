@@ -23,4 +23,5 @@ pip3 install pymssql
 
 ### 4. View in browser
 
-#### After running the command above there should be an <br /> output giving the path to view the webpage
+After running the command above there should be an <br /> 
+output giving the path to view the webpage
