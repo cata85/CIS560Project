@@ -44,8 +44,18 @@ def game(game_id, rows=None):
 @app.route('/game/<int:game_id>/select/<string:table>', methods=['GET'])
 def select(game_id, table):
     handler_key = handler[table]
-    rows = data.get_all(conn, handler_key)
+    conditional = f'WHERE GameID = {game_id}'
+    rows = data.get_all(conn, handler_key, conditional)
     return redirect(url_for('game', game_id=game_id, rows=rows))
+
+
+# Updates the selected row for a given table.
+@app.route('/game/<int:game_id>/update/<string:table>', methods=['POST'])
+def update(game_id, table):
+    handler_key = handler[table]
+    setter = request.form['setterTextbox']
+    data.update(conn, handler_key, game_id, setter)
+    return redirect(url_for('game', game_id=game_id))
 
 
 # Handles the case when the user presses Ctrl+C.

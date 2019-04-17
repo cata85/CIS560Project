@@ -71,11 +71,12 @@ def get_one(conn, monster_id):
 
 
 # Gets all the rows from Monster table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Monster;
+        FROM Betrayal.Monster
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -84,12 +85,12 @@ def get_all(conn):
 
 
 # Updates an element for a specific Monster
-# the 'column' parameter will be a string Example: "TileID = 14"
-def update(conn, monster_id, column):
+# the 'setter' parameter will be a string Example: "TileID = 14"
+def update(conn, monster_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Monster
-        SET {column}
+        SET {setter}
         WHERE MonsterID = monster_id
         '''
     cursor.execute(query)

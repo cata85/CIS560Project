@@ -71,11 +71,12 @@ def get_one(conn, item_id):
 
 
 # Gets all the rows from Item table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Item;
+        FROM Betrayal.Item
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -84,15 +85,14 @@ def get_all(conn):
 
 
 # Updates an element for a specific Item
-# the 'column' parameter will be a string Example: "TileID = 14"
-def update(conn, item_id, column):
+# the 'setter' parameter will be a string Example: "TileID = 14"
+def update(conn, item_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Monster
-        SET {column}
+        SET {setter}
         WHERE ItemID = item_id
         '''
     cursor.execute(query)
     conn.commit()
     cursor.close()
-

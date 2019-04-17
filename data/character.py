@@ -84,23 +84,25 @@ def get_one(conn, character_id):
 
 
 # Gets all the rows from Character table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Character;
+        FROM Betrayal.Character
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
     cursor.close()
     return rows
 
+
 # Updates an element for a specific CharacterID
-def update(conn, character_id, column):
+def update(conn, character_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Character
-        SET {column}
+        SET {setter}
         WHERE CharacterID = character_id
         '''
     cursor.execute(query)

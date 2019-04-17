@@ -81,24 +81,26 @@ def get_one(conn, card_id):
 
 
 # Gets all the rows from Card table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Card;
+        FROM Betrayal.Card
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
     cursor.close()
     return rows
 
+
 # Updates an element for a specific Card
-# the 'column' parameter will be a string Example: "State = N'Played'"
-def update(conn, card_id, column):
+# the 'setter' parameter will be a string Example: "State = N'Played'"
+def update(conn, card_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Card
-        SET {column}
+        SET {setter}
         WHERE CardID = card_id
         '''
     cursor.execute(query)

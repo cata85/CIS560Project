@@ -70,24 +70,26 @@ def get_one(conn, game_id):
 
 
 # Gets all the rows from Game table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Game;
+        FROM Betrayal.Game
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
     cursor.close()
     return rows
 
+
 # Updates an element for a specific Game
-# the 'column' parameter will be a string Example: "HauntID = 23"
-def update(conn, game_id, column):
+# the 'setter' parameter will be a string Example: "HauntID = 23"
+def update(conn, game_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Game
-        SET {column}
+        SET {setter}
         WHERE GameID = game_id
         '''
     cursor.execute(query)

@@ -80,11 +80,12 @@ def get_one(conn, tile_id):
 
 
 # Gets all the rows from Tile table.
-def get_all(conn):
+def get_all(conn, conditional):
     cursor = conn.cursor()
-    query = '''
+    query = f'''
         SELECT *
-        FROM Betrayal.Tile;
+        FROM Betrayal.Tile
+        {conditional};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
@@ -93,12 +94,12 @@ def get_all(conn):
 
 
 # Updates an element for a specific Tile
-# the 'column' parameter will be a string Example: "State = N'Played'"
-def update(conn, tile_id, column):
+# the 'setter' parameter will be a string Example: "State = N'Played'"
+def update(conn, tile_id, setter):
     cursor = conn.cursor()
     query = f'''
         UPDATE Betrayal.Tile
-        SET {column}
+        SET {setter}
         WHERE TileID = tile_id
         '''
     cursor.execute(query)

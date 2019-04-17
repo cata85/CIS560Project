@@ -22,7 +22,7 @@ FROM Betrayal.Game G
 SELECT  Count(C.CardID) AS HauntsPlayed
 FROM Betrayal.Game G
 	INNER JOIN Betrayal.Card C ON G.GameID = C.GameID
-WHERE G.GameID = 2 AND C.Type = 'Haunt"' AND C.State = 'Played'
+WHERE G.GameID = 2 AND C.Type = 'Haunt' AND C.State = 'Played'
 
 --Query 5  :  Select Items that a specific Player owns
 SELECT I.PlayerID, I.Name
