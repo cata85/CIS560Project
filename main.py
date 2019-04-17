@@ -36,6 +36,7 @@ def join():
 
 # Generates the requested game page
 @app.route('/game/<int:game_id>', methods=['GET'])
+@app.route('/game/<int:game_id>/<rows>', methods=['GET'])
 def game(game_id, rows=None):
     return render_template('game.html', game_id=game_id, rows=rows)
 
