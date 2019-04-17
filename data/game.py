@@ -81,6 +81,7 @@ def get_all(conn):
     cursor.close()
     return rows
 
+
 # Updates an element for a specific Game
 # the 'column' parameter will be a string Example: "HauntID = 23"
 def update(conn, game_id, column):

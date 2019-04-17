@@ -44,7 +44,7 @@ def game(game_id, rows=None):
 @app.route('/game/<int:game_id>/select/<string:table>', methods=['GET'])
 def select(game_id, table):
     handler_key = handler[table]
-    rows = data.get_all(conn, handler_key)
+    rows = data.get_all(conn, handler_key, game_id)
     return redirect(url_for('game', game_id=game_id, rows=rows))
 
 

@@ -95,4 +95,3 @@ def update(conn, item_id, column):
     cursor.execute(query)
     conn.commit()
     cursor.close()
-

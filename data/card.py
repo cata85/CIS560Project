@@ -92,6 +92,7 @@ def get_all(conn):
     cursor.close()
     return rows
 
+
 # Updates an element for a specific Card
 # the 'column' parameter will be a string Example: "State = N'Played'"
 def update(conn, card_id, column):

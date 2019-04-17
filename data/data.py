@@ -37,9 +37,10 @@ def get_one(conn, handler_key, id):
 
 
 # Gets all the rows from a table.
-def get_all(conn, handler_key):
-    rows = handler_key['Get_All'](conn)
+def get_all(conn, handler_key, id):
+    rows = handler_key['Get_All'](conn, id)
     return rows
+
 
 # Updates a single element in a column where id is the key, column is a string of the form "ColumnName = value"
 def update(conn, handler_key, id, column):
