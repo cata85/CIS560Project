@@ -33,7 +33,7 @@
            <td><button type="submit" class="btn btn-secondary" id="player_Select_btn">SELECT</button></td>
          </form>
          <td><button type="submit" class="btn btn-secondary" id="player_Insert_btn">INSERT</button></td>
-         <td><button type="submit" class="btn btn-secondary" id="player_Update_btn">UPDATE</button></td>
+         <td><button type="submit" class="btn btn-secondary" id="player_Update_btn" disabled="true">UPDATE</button></td>
        </tr>
        <tr>
          <td><h4>Characters:</h4></td>
@@ -79,6 +79,22 @@
   </div>
  </div>
  </div>
+</div>
+</div>
+
+
+<!-- Output Textbox-->
+<div class="container-fluid padding">
+<div class="row text-center">
+ <div class="col-md-12">
+   <h3>OUTPUT</h3>
+   <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;">
+     {% for player in list %}
+     <p style="display:block; margin-bottom:0px;">ONE Row</p>
+     <p style="display:block; margin-bottom:0px;">ONE Row</p>
+     {% endfor %}
+  </div>
+  </div>
 </div>
 </div>
 
