@@ -95,7 +95,7 @@ def get_all(conn):
     cursor.close()
     return rows
 
-# Updates for a specific character in the character table
+# Updates an element for a specific CharacterID
 def update(conn, character_id, column):
     cursor = conn.cursor()
     query = f'''

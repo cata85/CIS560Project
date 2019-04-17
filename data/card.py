@@ -91,3 +91,16 @@ def get_all(conn):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+# Updates an element for a specific Card
+# the 'column' parameter will be a string Example: "State = N'Played'"
+def update(conn, card_id, column):
+    cursor = conn.cursor()
+    query = f'''
+        UPDATE Betrayal.Card
+        SET {column}
+        WHERE CardID = card_id
+        '''
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()

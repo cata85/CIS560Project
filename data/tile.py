@@ -90,3 +90,17 @@ def get_all(conn):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+
+# Updates an element for a specific Tile
+# the 'column' parameter will be a string Example: "State = N'Played'"
+def update(conn, tile_id, column):
+    cursor = conn.cursor()
+    query = f'''
+        UPDATE Betrayal.Tile
+        SET {column}
+        WHERE TileID = tile_id
+        '''
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()

@@ -80,3 +80,16 @@ def get_all(conn):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+# Updates an element for a specific Game
+# the 'column' parameter will be a string Example: "HauntID = 23"
+def update(conn, game_id, column):
+    cursor = conn.cursor()
+    query = f'''
+        UPDATE Betrayal.Game
+        SET {column}
+        WHERE GameID = game_id
+        '''
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()

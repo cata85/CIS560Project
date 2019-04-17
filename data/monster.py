@@ -81,3 +81,17 @@ def get_all(conn):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+
+# Updates an element for a specific Monster
+# the 'column' parameter will be a string Example: "TileID = 14"
+def update(conn, monster_id, column):
+    cursor = conn.cursor()
+    query = f'''
+        UPDATE Betrayal.Monster
+        SET {column}
+        WHERE MonsterID = monster_id
+        '''
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()

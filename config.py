@@ -16,7 +16,8 @@ HANDLER = {
         'Insert_One': game.insert_one,
         'Insert_Many': game.insert_many,
         'Get_One': game.get_one,
-        'Get_All': game.get_all
+        'Get_All': game.get_all,
+        'Update': game.update
     },
     'Card': {
         'Create': card.create_table,
@@ -24,7 +25,8 @@ HANDLER = {
         'Insert_One': card.insert_one,
         'Insert_Many': card.insert_many,
         'Get_One': card.get_one,
-        'Get_All': card.get_all
+        'Get_All': card.get_all,
+        'Update': card.update
     },
     'Player': {
         'Create': player.create_table,
@@ -40,7 +42,8 @@ HANDLER = {
         'Insert_One': tile.insert_one,
         'Insert_Many': tile.insert_many,
         'Get_One': tile.get_one,
-        'Get_All': tile.get_all
+        'Get_All': tile.get_all,
+        'Update': tile.update
     },
     'Character': {
         'Create': character.create_table,
@@ -57,7 +60,8 @@ HANDLER = {
         'Insert_One': monster.insert_one,
         'Insert_Many': monster.insert_many,
         'Get_One': monster.get_one,
-        'Get_All': monster.get_all
+        'Get_All': monster.get_all,
+        'Update': monster.update
     },
     'Item': {
         'Create': item.create_table,
@@ -65,7 +69,8 @@ HANDLER = {
         'Insert_One': item.insert_one,
         'Insert_Many': item.insert_many,
         'Get_One': item.get_one,
-        'Get_All': item.get_all
+        'Get_All': item.get_all,
+        'Update': item.update
     }
 }                                                          # Handler for all the tables.
 FRESH = True                                               # Start database from scratch.

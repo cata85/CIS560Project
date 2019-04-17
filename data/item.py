@@ -81,3 +81,18 @@ def get_all(conn):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+
+# Updates an element for a specific Item
+# the 'column' parameter will be a string Example: "TileID = 14"
+def update(conn, item_id, column):
+    cursor = conn.cursor()
+    query = f'''
+        UPDATE Betrayal.Monster
+        SET {column}
+        WHERE ItemID = item_id
+        '''
+    cursor.execute(query)
+    conn.commit()
+    cursor.close()
+

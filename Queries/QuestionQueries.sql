@@ -8,8 +8,10 @@ ORDER BY PlayerID
 
 
 --Query 2  :  How many monsters are on the Board in Game
-
-
+SELECT Count(M.MonsterID) AS MonsterCount
+FROM Betrayal.Game G
+	INNER JOIN Betrayal.Tile T ON T.GameID = G.GameID
+	INNER JOIN Betrayal.Monster M ON M.TileID = M.TileID
 
 --Query 3  :  Select total number of Game sessions
 SELECT Count(G.GameID) AS GameCount
@@ -22,8 +24,12 @@ FROM Betrayal.Game G
 	INNER JOIN Betrayal.Card C ON G.GameID = C.GameID
 WHERE G.GameID = 2 AND C.Type = 'Haunt"' AND C.State = 'Played'
 
---Query 5  :  Select Objects that a specific Player owns
-
+--Query 5  :  Select Items that a specific Player owns
+SELECT I.PlayerID, I.Name
+FROM Betrayal.Game G
+	INNER JOIN Betrayal.Player P ON G.GameID = P.GameID
+	INNER JOIN Betrayal.Character C ON P.PlayerID = C.PlayerID
+	INNER JOIN Betrayal.Item I ON C.CharacterID = I.CharacterID
 
 
 --Query 6  :  Select all stats for every character in the Game Session
