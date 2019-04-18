@@ -18,7 +18,7 @@
 <div class="container-fluid padding">
 <div class="row text-center">
  <div class="col-md-12">
-    <h1 class="display-4 inline">Session ID = {{game_id}} --
+    <h1 class="display-4 inline">Game ID = {{game_id}} --
       <form action="/" method="GET">
         <button type="submit" class="btn btn-secondary" id="returntosplash_btn">CHANGE ID</button>
       </form>
@@ -83,16 +83,16 @@
 </div>
 
 
-{% if rows is not none %}
+{% if rows %}
 <!-- Output Textbox-->
 <div class="container-fluid padding">
 <div class="row text-center">
  <div class="col-md-12">
    <h3>OUTPUT</h3>
    <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;">
-     {% for entry in rows %}
-     <p style="display:block; margin-bottom:0px;">{{ rows.1 }} {{ rows.2 }}{{ rows.3 }}</p>
-     {% endfor %}
+    {% for row in rows %}
+     <p style="display:block; margin-bottom:0px;">{{ row|join(', ') }}</p>
+    {% endfor %}
   </div>
   </div>
 </div>

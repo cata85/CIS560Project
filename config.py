@@ -73,7 +73,7 @@ HANDLER = {
         'Update': item.update
     }
 }                                                          # Handler for all the tables.
-FRESH = True                                               # Start database from scratch.
+FRESH = False                                              # Start database from scratch.
 DEFAULT, INIT = helpers.get_values(FRESH)                  # Gets the default values and the initial values for the game.
 SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com' # SQL Server to connect to.
 USER = 'devmaster'                                         # SQL Server user.
