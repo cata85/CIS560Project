@@ -88,12 +88,42 @@
 <div class="container-fluid padding">
 <div class="row text-center">
  <div class="col-md-12">
+
    <h3>OUTPUT</h3>
-   <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;text-align:left;">
+   <table class="table table-striped">
+      <thead class="thead-dark">
+          <tr>
+              <th scope="col">GameId</th>
+              <th scope="col">PlayerId</th>
+              <th scope="col">Name</th>
+              <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in rows %}
+              <tr>
+                <td>{{ entry.0 }}</td>
+                <td>{{ entry.1 }}</td>
+                <td>{{ entry.2 }}</td>
+                <td><button class="btn btn-primary">UPDATE</button></td>
+
+
+              </tr>
+              
+            {% endfor %}
+
+        </tbody>
+
+   </table>
+  
+
+
+
+   <!----div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;text-align:left;">
      {% for entry in rows %}
         <p style="display:inline; margin-bottom:0px;">{{entry}}</p><br>
      {% endfor %}
-  </div>
+  </div-->
   </div>
 </div>
 </div>
