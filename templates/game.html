@@ -83,15 +83,30 @@
 </div>
 
 
-{% if rows is not none %}
+{% if rows %}
 <!-- Output Textbox-->
 <div class="container-fluid padding">
 <div class="row text-center">
  <div class="col-md-12">
    <h3>OUTPUT</h3>
-   <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;">
+   <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;text-align:left;">
+     {% set flag = false %}
      {% for entry in rows %}
-     <p style="display:block; margin-bottom:0px;">{{ rows.1 }} {{ rows.2 }}{{ rows.3 }}</p>
+          {% if entry == '[' or entry == ']' %}
+
+          {% else %}
+            {% if entry == ')' %}
+              {% set flag = true %}
+              <p style="display:inline; margin-bottom:0px;">{{entry}}</p><br>
+            {% else %}
+              {% if flag %}
+                <p style="display:inline; margin-bottom:0px;">waddudp</p>
+                {% set flag = false %}
+              {% else %}
+                <p style="display:inline; margin-bottom:0px;">{{entry}}</p>
+              {% endif %}
+            {% endif %}
+          {% endif %}
      {% endfor %}
   </div>
   </div>
