@@ -89,32 +89,10 @@
 <div class="row text-center">
  <div class="col-md-12">
    <h3>OUTPUT</h3>
-<<<<<<< HEAD
    <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;">
     {% for row in rows %}
      <p style="display:block; margin-bottom:0px;">{{ row|join(', ') }}</p>
     {% endfor %}
-=======
-   <div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;text-align:left;">
-     {% set flag = false %}
-     {% for entry in rows %}
-          {% if entry == '[' or entry == ']' %}
-
-          {% else %}
-            {% if entry == ')' %}
-              {% set flag = true %}
-              <p style="display:inline; margin-bottom:0px;">{{entry}}</p><br>
-            {% else %}
-              {% if flag %}
-                <p style="display:inline; margin-bottom:0px;">waddudp</p>
-                {% set flag = false %}
-              {% else %}
-                <p style="display:inline; margin-bottom:0px;">{{entry}}</p>
-              {% endif %}
-            {% endif %}
-          {% endif %}
-     {% endfor %}
->>>>>>> 2071811d5746ba4313fe7d778381d4a4294cfd44
   </div>
   </div>
 </div>
