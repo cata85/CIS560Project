@@ -17,6 +17,7 @@ HANDLER = {
         'Insert_Many': game.insert_many,
         'Get_One': game.get_one,
         'Get_All': game.get_all,
+        'Get_Column_Names': game.get_column_names,
         'Update': game.update
     },
     'Card': {
@@ -26,6 +27,7 @@ HANDLER = {
         'Insert_Many': card.insert_many,
         'Get_One': card.get_one,
         'Get_All': card.get_all,
+        'Get_Column_Names': card.get_column_names,
         'Update': card.update
     },
     'Player': {
@@ -34,7 +36,8 @@ HANDLER = {
         'Insert_One': player.insert_one,
         'Insert_Many': player.insert_many,
         'Get_One': player.get_one,
-        'Get_All': player.get_all
+        'Get_All': player.get_all,
+        'Get_Column_Names': player.get_column_names
     },
     'Tile': {
         'Create': tile.create_table,
@@ -43,6 +46,7 @@ HANDLER = {
         'Insert_Many': tile.insert_many,
         'Get_One': tile.get_one,
         'Get_All': tile.get_all,
+        'Get_Column_Names': tile.get_column_names,
         'Update': tile.update
     },
     'Character': {
@@ -52,6 +56,7 @@ HANDLER = {
         'Insert_Many': character.insert_many,
         'Get_One': character.get_one,
         'Get_All': character.get_all,
+        'Get_Column_Names': character.get_column_names,
         'Update': character.update
     },
     'Monster': {
@@ -61,6 +66,7 @@ HANDLER = {
         'Insert_Many': monster.insert_many,
         'Get_One': monster.get_one,
         'Get_All': monster.get_all,
+        'Get_Column_Names': monster.get_column_names,
         'Update': monster.update
     },
     'Item': {
@@ -70,6 +76,7 @@ HANDLER = {
         'Insert_Many': item.insert_many,
         'Get_One': item.get_one,
         'Get_All': item.get_all,
+        'Get_Column_Names': item.get_column_names,
         'Update': item.update
     }
 }                                                          # Handler for all the tables.

@@ -42,6 +42,12 @@ def get_all(conn, handler_key, conditional=''):
     return rows
 
 
+# Gets the column names for a given table.
+def get_column_names(handler_key):
+    column_names = handler_key['Get_Column_Names']()
+    return column_names
+
+
 # Updates a single element in a column where id is the key, setter is a string of the form "ColumnName = value"
 def update(conn, handler_key, id, setter):
     handler_key['Update'](conn, id, setter)

@@ -94,6 +94,11 @@ def get_all(conn, conditional):
     return rows
 
 
+# Gets the column names for the Card table.
+def get_column_names():
+    return ['CardID', 'GameID', 'Name', 'Type', 'State']
+
+
 # Updates an element for a specific Card
 # the 'setter' parameter will be a string Example: "State = N'Played'"
 def update(conn, card_id, setter):

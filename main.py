@@ -36,8 +36,8 @@ def join():
 
 # Generates the requested game page
 @app.route('/game/<int:game_id>', methods=['GET'])
-def game(game_id, rows=None):
-    return render_template('game.html', game_id=game_id, rows=rows)
+def game(game_id, rows=None, column_names=None):
+    return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names)
 
 
 # Selects all the rows for the given table.
@@ -46,7 +46,8 @@ def select(game_id, table):
     handler_key = handler[table]
     conditional = f'WHERE GameID = {game_id}'
     rows = data.get_all(conn, handler_key, conditional)
-    return render_template('game.html', game_id=game_id, rows=rows)
+    column_names = data.get_column_names(handler_key)
+    return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names)
 
 
 # Updates the selected row for a given table.

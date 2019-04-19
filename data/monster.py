@@ -84,6 +84,11 @@ def get_all(conn, conditional):
     return rows
 
 
+# Gets the column names for the Monster table.
+def get_column_names():
+    return ['MonsterID', 'TileID', 'Name']
+
+
 # Updates an element for a specific Monster
 # the 'setter' parameter will be a string Example: "TileID = 14"
 def update(conn, monster_id, setter):

@@ -83,6 +83,11 @@ def get_all(conn, conditional):
     return rows
 
 
+# Gets the column names for the Game table.
+def get_column_names():
+    return ['GameID', 'StartDate', 'Haunt', 'TrackValue']
+
+
 # Updates an element for a specific Game
 # the 'setter' parameter will be a string Example: "HauntID = 23"
 def update(conn, game_id, setter):

@@ -88,3 +88,8 @@ def get_all(conn, conditional):
     rows = cursor.fetchall()
     cursor.close()
     return rows
+
+
+# Gets the column names for the Player table.
+def get_column_names():
+    return ['PlayerID', 'GameID', 'PlayerName']

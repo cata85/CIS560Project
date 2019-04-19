@@ -84,6 +84,11 @@ def get_all(conn, conditional):
     return rows
 
 
+# Gets the column names for the Item table.
+def get_column_names():
+    return ['ItemID', 'TileID', 'Name']
+
+
 # Updates an element for a specific Item
 # the 'setter' parameter will be a string Example: "TileID = 14"
 def update(conn, item_id, setter):

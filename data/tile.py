@@ -93,6 +93,11 @@ def get_all(conn, conditional):
     return rows
 
 
+# Gets the column names for the Tile table.
+def get_column_names():
+    return ['TileID', 'GameID', 'Name', 'Floor', 'State']
+
+
 # Updates an element for a specific Tile
 # the 'setter' parameter will be a string Example: "State = N'Played'"
 def update(conn, tile_id, setter):

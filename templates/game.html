@@ -93,10 +93,9 @@
    <table class="table table-striped">
       <thead class="thead-dark">
           <tr>
-            <th scope="col">GameId</th>
-            <th scope="col">PlayerId</th>
-            <th scope="col">Name</th>
-            <th scope="col">Action</th>
+            {% for name in column_names %}
+              <th scope="col">{{ name }}</th>
+            {% endfor %}
           </tr>
         </thead>
         <tbody>

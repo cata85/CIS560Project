@@ -97,6 +97,11 @@ def get_all(conn, conditional):
     return rows
 
 
+# Gets the column names for the Character table.
+def get_column_names():
+    return ['CharacterID', 'PlayerID', 'CharacterName', 'TileID', 'Speed', 'Might', 'Sanity', 'Knowledge']
+
+
 # Updates an element for a specific CharacterID
 def update(conn, character_id, setter):
     cursor = conn.cursor()
