@@ -93,29 +93,25 @@
    <table class="table table-striped">
       <thead class="thead-dark">
           <tr>
-              <th scope="col">GameId</th>
-              <th scope="col">PlayerId</th>
-              <th scope="col">Name</th>
-              <th scope="col">Action</th>
-            </tr>
+            <th scope="col">GameId</th>
+            <th scope="col">PlayerId</th>
+            <th scope="col">Name</th>
+            <th scope="col">Action</th>
+          </tr>
         </thead>
         <tbody>
             {% for entry in rows %}
               <tr>
-                <td>{{ entry.0 }}</td>
-                <td>{{ entry.1 }}</td>
-                <td>{{ entry.2 }}</td>
+                {% for col in entry %}
+                  <td>{{ col }}</td>
+                {% endfor %}
                 <td><button class="btn btn-primary">UPDATE</button></td>
-
-
               </tr>
-              
             {% endfor %}
-
         </tbody>
 
    </table>
-  
+
 
 
 
