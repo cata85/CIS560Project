@@ -43,39 +43,55 @@
        </tr>
        <tr>
          <td><h4>Characters:</h4></td>
+
+          <!--SELECT BUTTON -->
          <form action="/game/{{ game_id }}/select/Character" method="GET">
           <td><button type="submit" class="btn btn-secondary" id="character_Select_btn">SELECT</button></td>
          </form>
-         <td><button type="submit" class="btn btn-secondary" id="character_Insert_btn">INSERT</button></td>
 
+  <td><button type="button" style="color:white;" class="btn btn-secondary" data-toggle="modal" data-target="#insert_character_modal">INSERT</button></td>
        </tr>
        <tr>
          <td><h4>Tiles:</h4></td>
+
+          <!--SELECT BUTTON -->
          <form action="/game/{{ game_id }}/select/Tile" method="GET">
           <td><button type="submit" class="btn btn-secondary" id="tile_Select_btn">SELECT</button></td>
          </form>
+
+           <!-- INSERT BUTTON -->
          <td><button type="submit" class="btn btn-secondary" id="tile_Insert_btn" disabled="true">INSERT</button></td>
 
        </tr>
        <tr>
          <td><h4>Items:</h4></td>
+
+         <!--SELECT BUTTON -->
          <form action="/game/{{ game_id }}/select/Item" method="GET">
           <td><button type="submit" class="btn btn-secondary" id="item_Select_btn">SELECT</button></td>
          </form>
-         <td><button type="submit" class="btn btn-secondary" id="item_Insert_btn">INSERT</button></td>
-       </tr>
+
+           <!-- INSERT BUTTON -->
+         <td><button type="button" style="color:white;" class="btn btn-secondary" data-toggle="modal" data-target="#insert_item_modal">INSERT</button></td>       </tr>
        <tr>
          <td><h4>Monsters:</h4></td>
+
+         <!--SELECT BUTTON -->
          <form action="/game/{{ game_id }}/select/Monster" method="GET">
           <td><button type="submit" class="btn btn-secondary" id="monster_Select_btn">SELECT</button></td>
          </form>
-         <td><button type="submit" class="btn btn-secondary" id="monster_Insert_btn">INSERT</button></td>
-       </tr>
+
+           <!-- INSERT BUTTON -->
+         <td><button type="button" style="color:white;" class="btn btn-secondary" data-toggle="modal" data-target="#insert_monster_modal">INSERT</button></td>       </tr>
        <tr>
          <td><h4>Cards:</h4></td>
+
+         <!--SELECT BUTTON -->
          <form action="/game/{{ game_id }}/select/Card" method="GET">
           <td><button type="submit" class="btn btn-secondary" id="card_Select_btn">SELECT</button></td>
          </form>
+
+           <!-- INSERT BUTTON -->
          <td><button type="submit" class="btn btn-secondary" id="card_Insert_btn" disabled="true">INSERT</button></td>
        </tr>
     </table>
@@ -85,7 +101,7 @@
 </div>
 </div>
 
-<!-- Modal -->
+<!-- PLAYER Modal -->
 <div id="insert_player_modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -96,13 +112,13 @@
       </div>
 
         <div class="modal-body">
-          Column(s): Name <br>
+          Column(s): PlayerName <br>
 
           <br>
           <br>
           Enter the required info. Seperate values with commas.
       <form action="/game/{{ game_id }}/insert/Player" method="POST">
-        <textarea class="form-control" rows="1" id="setterTextbox" placeholder="example, example, example"></textarea>
+        <textarea class="form-control" rows="1" name="row" id="setterTextbox" placeholder="example, example, example"></textarea>
         </div>
         <div class="modal-footer">
          <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
@@ -114,6 +130,92 @@
   </div>
 </div>
 
+<!-- CHARACTER Modal -->
+<div id="insert_character_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Insert into Character table</h4>
+      </div>
+
+        <div class="modal-body">
+          Column(s): PlayerName, CharacterName <br>
+
+          <br>
+          <br>
+          Enter the required info. Seperate values with commas.
+      <form action="/game/{{ game_id }}/insert/Character" method="POST">
+        <textarea class="form-control" rows="1" name="row" id="setterTextbox" placeholder="example, example, example"></textarea>
+        </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
+      </form>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ITEM Modal -->
+<div id="insert_item_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Insert into Item table</h4>
+      </div>
+
+        <div class="modal-body">
+          Column(s): ItemName, TileName <br>
+
+          <br>
+          <br>
+          Enter the required info. Seperate values with commas.
+      <form action="/game/{{ game_id }}/insert/Item" method="POST">
+        <textarea class="form-control" rows="1" name="row" id="setterTextbox" placeholder="example, example, example"></textarea>
+        </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
+      </form>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- MONSTER Modal -->
+<div id="insert_monster_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Insert into Monster table</h4>
+      </div>
+
+        <div class="modal-body">
+          Column(s): MonsterName, TileName  <br>
+
+          <br>
+          <br>
+          Enter the required info. Seperate values with commas.
+      <form action="/game/{{ game_id }}/insert/Monster" method="POST">
+        <textarea class="form-control" rows="1" name="row" id="setterTextbox" placeholder="example, example, example"></textarea>
+        </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
+      </form>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 <!-- Output Textbox-->
 {% if rows %}
 <div class="container-fluid padding">
