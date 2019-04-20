@@ -11,7 +11,7 @@ def create_table(conn):
             ItemID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             TileID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Tile(TileID),
-            Name NVARCHAR(32) NOT NULL
+            ItemName NVARCHAR(32) NOT NULL
         );
         '''
     cursor.execute(query)
@@ -86,7 +86,7 @@ def get_all(conn, conditional):
 
 # Gets the column names for the Item table.
 def get_column_names():
-    return ['ItemID', 'TileID', 'Name']
+    return ['ItemID', 'TileID', 'ItemName']
 
 
 # Updates an element for a specific Item

@@ -11,19 +11,17 @@ def create_table(conn):
             CardID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             GameID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Game(GameID),
-            Name NVARCHAR(32) NOT NULL,
+            CardName NVARCHAR(32) NOT NULL,
             Type NVARCHAR(5) NOT NULL,
             State NVARCHAR(10) NOT NULL DEFAULT(N'Not Played'),
 
             UNIQUE
             (
                 GameID ASC,
-                Name ASC
+                CardName ASC
             )
         );
         '''
-		
-		# TODO: Check all the lenghts of the NVARCHAR's to make sure they are the correct lengths.
     cursor.execute(query)
     conn.commit()
     cursor.close()
@@ -96,7 +94,7 @@ def get_all(conn, conditional):
 
 # Gets the column names for the Card table.
 def get_column_names():
-    return ['CardID', 'GameID', 'Name', 'Type', 'State']
+    return ['CardID', 'GameID', 'CardName', 'Type', 'State']
 
 
 # Updates an element for a specific Card

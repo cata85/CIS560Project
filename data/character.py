@@ -22,11 +22,10 @@ def create_table(conn):
             UNIQUE
             (
                 PlayerID ASC,
-                CharacterName ASC
+                Name ASC
             )
         );
         ''' 
-        # TODO: IS TILEID A FOREIGN KEY?
     cursor.execute(query)
     conn.commit()
     cursor.close()

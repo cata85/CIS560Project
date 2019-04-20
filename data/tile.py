@@ -11,14 +11,14 @@ def create_table(conn):
             TileID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             GameID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Game(GameID),
-            Name NVARCHAR(32) NOT NULL,
+            TileName NVARCHAR(32) NOT NULL,
             Floor NVARCHAR(8) NOT NULL,
-            State NVARCHAR(10) NOT NULL,
+            State NVARCHAR(10) NOT NULL DEFAULT(N'Not Player'),
 			
             UNIQUE
             (
                 GameID ASC,
-                Name ASC
+                TileName ASC
             )
         );
         '''
@@ -95,7 +95,7 @@ def get_all(conn, conditional):
 
 # Gets the column names for the Tile table.
 def get_column_names():
-    return ['TileID', 'GameID', 'Name', 'Floor', 'State']
+    return ['TileID', 'GameID', 'TileName', 'Floor', 'State']
 
 
 # Updates an element for a specific Tile

@@ -11,7 +11,7 @@ def create_table(conn):
             MonsterID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             TileID INT NOT NULL FOREIGN KEY
                 REFERENCES Betrayal.Tile(TileID),
-            Name NVARCHAR(32) NOT NULL
+            MonsterName NVARCHAR(32) NOT NULL
         );
         '''
     cursor.execute(query)
@@ -86,7 +86,7 @@ def get_all(conn, conditional):
 
 # Gets the column names for the Monster table.
 def get_column_names():
-    return ['MonsterID', 'TileID', 'Name']
+    return ['MonsterID', 'TileID', 'MonsterName']
 
 
 # Updates an element for a specific Monster
