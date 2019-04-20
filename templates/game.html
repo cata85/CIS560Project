@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
-   <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
 
     <title>Game</title>
   </head>
@@ -29,10 +29,20 @@
      <table id="gameTable">
        <tr>
          <td><h4>Players:</h4></td>
-         <form action="/game/{{ game_id }}/select/Player" method="GET">
+
+         <!--SELECT BUTTON -->
+          <form action="/game/{{ game_id }}/select/Player" method="GET">
            <td><button type="submit" class="btn btn-secondary" id="player_Select_btn">SELECT</button></td>
-         </form>
-         <td><button type="submit" class="btn btn-secondary" id="player_Insert_btn">INSERT</button></td>
+          </form>
+
+          <!-- INSERT BUTTON -->
+          <form action="/game/{{ game_id }}/insert/Player" method="GET">
+            <td><a type="submit" style="color:white;" class="btn btn-secondary" data-toggle="modal" data-target="#insertModal">
+              INSERT
+            </a></td>
+          </form>
+
+
          <td><button type="submit" class="btn btn-secondary" id="player_Update_btn" disabled="true">UPDATE</button></td>
        </tr>
        <tr>
@@ -82,9 +92,44 @@
 </div>
 </div>
 
+<!-- Modal -->
+<div id="insertModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-{% if rows %}
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Insert into {{table_name}} table</h4>
+      </div>
+      <form action="/game/{{ game_id }}/insert/{{table}}" method="POST">
+        <div class="modal-body">
+          Columns: <br>
+          {% if column_names %}
+          {% for name in column_names %}
+            {% if name != column_names.0 %}
+              , {{ name }}
+            {% else %}
+              {{ name }}
+            {% endif %}
+          {% endfor %}
+          {% endif %}
+          <br>
+          <br>
+          Enter the information for each column delimited by a comma.
+        <textarea class="form-control" rows="1" id="setterTextbox" placeholder="example, example, example"></textarea>
+        </div>
+        <div class="modal-footer">
+         <button type="submit" class="btn btn-secondary" id="Insert_btn">Insert</button>
+      </form>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- Output Textbox-->
+{% if rows %}
 <div class="container-fluid padding">
 <div class="row text-center">
  <div class="col-md-12">
@@ -96,6 +141,7 @@
             {% for name in column_names %}
               <th scope="col">{{ name }}</th>
             {% endfor %}
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -110,15 +156,6 @@
         </tbody>
 
    </table>
-
-
-
-
-   <!----div style="overflow: auto; width: 85%; height:250px;border: 1px solid black;margin:auto;text-align:left;">
-     {% for entry in rows %}
-        <p style="display:inline; margin-bottom:0px;">{{entry}}</p><br>
-     {% endfor %}
-  </div-->
   </div>
 </div>
 </div>
@@ -134,7 +171,6 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>

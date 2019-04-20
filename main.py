@@ -49,6 +49,19 @@ def select(game_id, table):
     column_names = data.get_column_names(handler_key)
     return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names)
 
+# Inserts row for the given table.
+@app.route('/game/<int:game_id>/insert/<string:table>', methods=['POST', 'GET'])
+def insert(game_id, table):
+    handler_key = handler[table]
+    table_name = table
+    column_names = data.get_column_names(handler_key)
+    if request.method == 'POST':
+        setter = request.form['setterTextbox']
+        #do insertion here
+        return redirect(url_for('game', game_id=game_id))
+    else:
+        return render_template('game.html', game_id=game_id, column_names=column_names, table_name = table_name)
+
 
 # Updates the selected row for a given table.
 @app.route('/game/<int:game_id>/update/<string:table>', methods=['POST'])
