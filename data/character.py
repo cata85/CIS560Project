@@ -22,7 +22,7 @@ def create_table(conn):
             UNIQUE
             (
                 PlayerID ASC,
-                Name ASC
+                CharacterName ASC
             )
         );
         ''' 
