@@ -10,8 +10,8 @@ def create_table(conn):
         (
             GameID INT NOT NULL IDENTITY(1, 1) PRIMARY KEY,
             StartDate DATETIMEOFFSET NOT NULL DEFAULT(SYSDATETIMEOFFSET()),
-			Haunt INT NOT NULL DEFAULT(0),
-			TrackValue INT NOT NULL DEFAULT(0)
+			Haunt INT NULL DEFAULT(NULL),
+			TrackValue INT NULL DEFAULT(NULL)
         );
         '''
     cursor.execute(query)
