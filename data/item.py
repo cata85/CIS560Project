@@ -96,7 +96,7 @@ def update(conn, item_id, setter):
     query = f'''
         UPDATE Betrayal.Monster
         SET {setter}
-        WHERE ItemID = item_id
+        WHERE ItemID = {item_id}
         '''
     cursor.execute(query)
     conn.commit()

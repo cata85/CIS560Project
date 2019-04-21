@@ -104,7 +104,7 @@ def update(conn, card_id, setter):
     query = f'''
         UPDATE Betrayal.Card
         SET {setter}
-        WHERE CardID = card_id
+        WHERE CardID = {card_id}
         '''
     cursor.execute(query)
     conn.commit()

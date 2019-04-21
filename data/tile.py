@@ -104,7 +104,7 @@ def update(conn, tile_id, setter):
     query = f'''
         UPDATE Betrayal.Tile
         SET {setter}
-        WHERE TileID = tile_id
+        WHERE TileID = {tile_id}
         '''
     cursor.execute(query)
     conn.commit()

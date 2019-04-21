@@ -107,7 +107,7 @@ def update(conn, character_id, setter):
     query = f'''
         UPDATE Betrayal.Character
         SET {setter}
-        WHERE CharacterID = character_id
+        WHERE CharacterID = {character_id}
         '''
     cursor.execute(query)
     conn.commit()
