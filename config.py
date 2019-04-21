@@ -82,7 +82,7 @@ HANDLER = {
 }                                                          # Handler for all the tables.
 FRESH = True                                               # Start database from scratch.
 DEFAULT, INIT = helpers.get_values(FRESH)                  # Gets the default values and the initial values for the game.
-SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com' # SQL Server to connect to.
+SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com:18765' # SQL Server to connect to.
 USER = 'devmaster'                                         # SQL Server user.
 PASSWORD = 'shaner26mhixon'                                # SQL Server password.
 DB = 'cis560'                                              # SQL Server database to use.
