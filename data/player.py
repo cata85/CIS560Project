@@ -40,9 +40,9 @@ def insert_one(conn, row):
     player_id = -1
     if row:
         query = f'''
-            INSERT INTO Betrayal.Player VALUES {row};
+            INSERT INTO Betrayal.Player VALUES (%d, %s)
             '''
-        cursor.execute(query)
+        cursor.execute(query, row)
         conn.commit()
         player_id = cursor.lastrowid
     else:
@@ -77,12 +77,12 @@ def get_one(conn, player_id):
 
 
 # Gets all the rows from Player table.
-def get_all(conn, conditional):
+def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
         SELECT *
-        FROM Betrayal.Player
-        {conditional};
+        FROM Betrayal.Player P
+        WHERE P.GameID = {game_id};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

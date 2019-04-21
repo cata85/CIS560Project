@@ -45,10 +45,14 @@ def insert_one(conn, row):
     cursor = conn.cursor()
     character_id = -1
     if row:
+        try:
+            row = [int(row[0]), str(row[1]), int(row[2]), int(row[3]), int(row[4]), int(row[5]), int(row[6])]
+        except:
+            return character_id
         query = f'''
-            INSERT INTO Betrayal.Character VALUES {row};
+            INSERT INTO Betrayal.Character VALUES (%d, %s, %d, %d, %d, %d, %d);
             '''
-        cursor.execute(query)
+        cursor.execute(query, row)
         conn.commit()
         character_id = cursor.lastrowid
     else:
@@ -83,12 +87,13 @@ def get_one(conn, character_id):
 
 
 # Gets all the rows from Character table.
-def get_all(conn, conditional):
+def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
         SELECT *
-        FROM Betrayal.Character
-        {conditional};
+        FROM Betrayal.Character C
+            INNER JOIN Betrayal.Player P ON P.PlayerID = C.PlayerID
+        WHERE P.GameID = {game_id};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

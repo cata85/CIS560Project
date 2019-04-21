@@ -44,20 +44,21 @@ def game(game_id, rows=None, column_names=None):
 @app.route('/game/<int:game_id>/select/<string:table>', methods=['GET'])
 def select(game_id, table):
     handler_key = handler[table]
-    conditional = f'WHERE GameID = {game_id}'
-    rows = data.get_all(conn, handler_key, conditional)
+    rows = data.get_all(conn, handler_key, game_id)
     column_names = data.get_column_names(handler_key)
     return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names)
 
 # Inserts row for the given table.
 @app.route('/game/<int:game_id>/insert/<string:table>', methods=['POST'])
 def insert(game_id, table):
-    handler_key = handler[table]
-    setter = request.form['setterTextbox']
-    #do insertion here
+    if request.method == 'POST':
+        handler_key = handler[table]
+        row = (game_id, request.form['setterTextbox'])
+        data.insert_one(conn, handler_key, row)
     return redirect(url_for('game', game_id=game_id))
 
 # Updates the selected row for a given table.
+# TODO: This needs lots of error handling with values sent.
 @app.route('/game/<int:game_id>/update/<string:table>', methods=['POST'])
 def update(game_id, table):
     handler_key = handler[table]

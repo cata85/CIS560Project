@@ -70,12 +70,12 @@ def get_one(conn, game_id):
 
 
 # Gets all the rows from Game table.
-def get_all(conn, conditional):
+def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
         SELECT *
-        FROM Betrayal.Game
-        {conditional};
+        FROM Betrayal.Game G
+        WHERE G.GameID = {game_id};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

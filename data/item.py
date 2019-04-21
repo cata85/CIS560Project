@@ -71,12 +71,13 @@ def get_one(conn, item_id):
 
 
 # Gets all the rows from Item table.
-def get_all(conn, conditional):
+def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
         SELECT *
-        FROM Betrayal.Item
-        {conditional};
+        FROM Betrayal.Item I
+            INNER JOIN Betrayal.Tile T ON T.TileID = I.TileID
+        WHERE T.GameID = {game_id};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()
