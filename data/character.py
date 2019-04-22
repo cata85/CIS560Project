@@ -90,9 +90,10 @@ def get_one(conn, character_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT C.CharacterID, P.PlayerName, C.CharacterName, T.TileName, C.Speed, C.Might, C.Sanity, C.Knowledge
         FROM Betrayal.Character C
             INNER JOIN Betrayal.Player P ON P.PlayerID = C.PlayerID
+            INNER JOIN Betrayal.Tile T  ON C.TileID = T.TileID
         WHERE P.GameID = {game_id};
         '''
     cursor.execute(query)
@@ -103,7 +104,7 @@ def get_all(conn, game_id):
 
 # Gets the column names for the Character table.
 def get_column_names():
-    return ['CharacterID', 'PlayerID', 'CharacterName', 'TileID', 'Speed', 'Might', 'Sanity', 'Knowledge']
+    return ['CharacterID', 'PlayerName', 'CharacterName', 'TileName', 'Speed', 'Might', 'Sanity', 'Knowledge']
 
 
 # Updates an element for a specific CharacterID
