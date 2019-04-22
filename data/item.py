@@ -74,7 +74,7 @@ def get_one(conn, item_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT I.ItemID, T.TileName, I.ItemName
         FROM Betrayal.Item I
             INNER JOIN Betrayal.Tile T ON T.TileID = I.TileID
         WHERE T.GameID = {game_id};
@@ -87,7 +87,7 @@ def get_all(conn, game_id):
 
 # Gets the column names for the Item table.
 def get_column_names():
-    return ['ItemID', 'TileID', 'ItemName']
+    return ['ItemID', 'TileName', 'ItemName']
 
 
 # Updates an element for a specific Item

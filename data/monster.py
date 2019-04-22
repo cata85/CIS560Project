@@ -74,7 +74,7 @@ def get_one(conn, monster_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT M.MonsterID, T.TileName, M.MonsterName
         FROM Betrayal.Monster M
             INNER JOIN Betrayal.Tile T ON T.TileID = M.TileID
         WHERE T.GameID = {game_id};

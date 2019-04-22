@@ -80,7 +80,7 @@ def get_one(conn, player_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT P.PlayerID, P.PlayerName
         FROM Betrayal.Player P
         WHERE P.GameID = {game_id};
         '''
@@ -92,4 +92,4 @@ def get_all(conn, game_id):
 
 # Gets the column names for the Player table.
 def get_column_names():
-    return ['PlayerID', 'GameID', 'PlayerName']
+    return ['PlayerID', 'PlayerName']

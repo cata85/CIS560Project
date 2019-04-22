@@ -82,7 +82,7 @@ def get_one(conn, card_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT C.CardID, C.CardName, C.Type, C.State
         FROM Betrayal.Card C
         WHERE C.GameID = {game_id};
         '''
@@ -94,7 +94,7 @@ def get_all(conn, game_id):
 
 # Gets the column names for the Card table.
 def get_column_names():
-    return ['CardID', 'GameID', 'CardName', 'Type', 'State']
+    return ['CardID', 'CardName', 'Type', 'State']
 
 
 # Updates an element for a specific Card

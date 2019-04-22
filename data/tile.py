@@ -82,7 +82,7 @@ def get_one(conn, tile_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT T.TileID, T.TileName, T.Floor, T.State
         FROM Betrayal.Tile T
         WHERE T.GameID = {game_id};
         '''
@@ -94,7 +94,7 @@ def get_all(conn, game_id):
 
 # Gets the column names for the Tile table.
 def get_column_names():
-    return ['TileID', 'GameID', 'TileName', 'Floor', 'State']
+    return ['TileID', 'TileName', 'Floor', 'State']
 
 
 # Updates an element for a specific Tile
