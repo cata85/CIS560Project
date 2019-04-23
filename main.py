@@ -49,7 +49,11 @@ def select(game_id, table):
     handler_key = handler[table]
     rows = data.get_all(conn, handler_key, game_id)
     column_names = data.get_column_names(handler_key)
-    return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names)
+    players = helpers.get_players(conn, handler['Player'], game_id)
+    characters = config.CHARACTERS
+    tiles=config.TILES
+    return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names,
+        players=players, characters=characters, tiles=tiles)
 
 # Inserts row for the given table.
 @app.route('/game/<int:game_id>/insert/<string:table>', methods=['POST'])
