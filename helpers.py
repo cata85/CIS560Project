@@ -53,8 +53,5 @@ def get_tiles(DEFAULT):
 # Gets all of the player names in a given game.
 def get_players(conn, handler_key, game_id):
     player_data = data.get_all(conn, handler_key, game_id)
-    try:
-        players = [player['PlayerName'] for player in player_data]
-    except:
-        players = None
+    players = [player[1] for player in player_data]
     return players
