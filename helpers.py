@@ -61,3 +61,9 @@ def get_players(conn, handler_key, game_id):
 def get_items(DEFAULT):
     items = [item['ItemName'] for item in DEFAULT['Items']]
     return items
+
+
+# Gets all of the monster names.
+def get_monsters(DEFAULT):
+    monsters = [monster['MonsterName'] for monster in DEFAULT['Monsters']]
+    return monsters
