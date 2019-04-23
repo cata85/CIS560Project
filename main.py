@@ -31,6 +31,7 @@ def join():
                 return redirect(url_for('game', game_id=game_id))
         return redirect(url_for('index'))
     game_id = data.insert_one(conn, handler_key)
+    helpers.insert_new_game_values(conn, handler, game_id, config.DEFAULT)
     return redirect(url_for('game', game_id=game_id))
 
 
@@ -56,6 +57,7 @@ def insert(game_id, table):
         row = (game_id, request.form['setterTextbox'])
         data.insert_one(conn, handler_key, row)
     return redirect(url_for('game', game_id=game_id))
+
 
 # Updates the selected row for a given table.
 # TODO: This needs lots of error handling with values sent.
