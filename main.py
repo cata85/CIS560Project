@@ -64,8 +64,19 @@ def select(game_id, table):
 def insert(game_id, table):
     if request.method == 'POST':
         handler_key = handler[table]
-        row = (game_id, request.form['setterTextbox'])
-        data.insert_one(conn, handler_key, row)
+        if table == 'Player':
+            row = (game_id, request.form['player_name_player'])
+            data.insert_one(conn, handler_key, row)
+        elif table == 'Character':
+            row = (game_id, request.form['player_name_character'], request.form['character_name_character'], request.form['tile_name_character'],
+                request.form['speed_character'], request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
+            data.insert_one(conn, handler_key, row)
+        elif table == 'Item':
+            row = (game_id, request.form['item_name_item'], request.form['tile_name_item'])
+            data.insert_one(conn, handler_key, row)
+        elif table == 'Monster':
+            row = (game_id, request.form['monster_name_monster'], request.form['tile_name_monster'])
+            data.insert_one(conn, handler_key, row)
     return redirect(url_for('game', game_id=game_id))
 
 
