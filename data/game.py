@@ -59,7 +59,11 @@ def insert_many(conn, rows):
 def get_one(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT * 
+        SELECT 
+            G.GameID,
+            CONVERT(varchar(25), G.StartDate, 120) AS StartDate, 
+            G.Haunt,
+            G.TrackValue
         FROM Betrayal.Game G
         WHERE G.GameID = {game_id};
         '''
@@ -73,7 +77,11 @@ def get_one(conn, game_id):
 def get_all(conn, game_id):
     cursor = conn.cursor()
     query = f'''
-        SELECT *
+        SELECT 
+            G.GameID,
+            CONVERT(varchar(25), G.StartDate, 120) AS StartDate, 
+            G.Haunt,
+            G.TrackValue
         FROM Betrayal.Game G
         '''
     cursor.execute(query)
