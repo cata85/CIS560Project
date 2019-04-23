@@ -28,3 +28,11 @@ def insert_initial_values(conn, handler, INIT):
     data.insert_many(conn, handler['Character'], characters)
     data.insert_many(conn, handler['Monster'], monsters)
     data.insert_many(conn, handler['Item'], items)
+
+
+# Inserts the cards and tiles when a new game is played
+def insert_new_game_values(conn, handler, game_id, DEFAULT):
+    cards = list((int(game_id), card['CardName'], card['Type'], 'Not Played') for card in DEFAULT['Cards'])
+    tiles = list((int(game_id), tile['TileName'], tile['Floor'], 'Not Played') for tile in DEFAULT['Tiles'])
+    data.insert_many(conn, handler['Card'], cards)
+    data.insert_many(conn, handler['Tile'], tiles)
