@@ -440,10 +440,6 @@
         ],
         "Tiles": [
             {
-                "TileName": "Empty Tile",
-                "Floor": "N/A"
-            },
-            {
                 "TileName": "Abandoned Room",
                 "Floor": "N/A"
             },
