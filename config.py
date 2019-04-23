@@ -84,6 +84,7 @@ FRESH = False                                                    # Start databas
 DEFAULT, INIT = helpers.get_values(FRESH)                        # Gets the default values and the initial values for the game.
 CHARACTERS = helpers.get_characters(DEFAULT)                     # Gets all the character names.
 TILES = helpers.get_tiles(DEFAULT)                               # Gets all the tile names.
+ITEMS = helpers.get_items(DEFAULT)                               # Gets all the item names.
 SERVER = 'awsrds.cuhsitdkxbpc.us-west-2.rds.amazonaws.com:18765' # SQL Server to connect to.
 USER = 'devmaster'                                               # SQL Server user.
 PASSWORD = 'shaner26mhixon'                                      # SQL Server password.

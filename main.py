@@ -37,10 +37,10 @@ def join():
 
 # Generates the requested game page
 @app.route('/game/<int:game_id>', methods=['GET'])
-def game(game_id, rows=None, column_names=None, players=None, characters=config.CHARACTERS, tiles=config.TILES):
+def game(game_id, rows=None, column_names=None, players=None, characters=config.CHARACTERS, tiles=config.TILES, items=config.ITEMS):
     players = helpers.get_players(conn, handler['Player'], game_id)
     return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names,
-        players=players, characters=characters, tiles=tiles)
+        players=players, characters=characters, tiles=tiles, items=items)
 
 
 # Selects all the rows for the given table.
@@ -51,9 +51,10 @@ def select(game_id, table):
     column_names = data.get_column_names(handler_key)
     players = helpers.get_players(conn, handler['Player'], game_id)
     characters = config.CHARACTERS
-    tiles=config.TILES
+    tiles = config.TILES
+    items = config.ITEMS
     return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names,
-        players=players, characters=characters, tiles=tiles)
+        players=players, characters=characters, tiles=tiles, items=items)
 
 # Inserts row for the given table.
 @app.route('/game/<int:game_id>/insert/<string:table>', methods=['POST'])

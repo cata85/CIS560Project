@@ -46,7 +46,7 @@ def get_characters(DEFAULT):
 
 # Gets all of the tile names.
 def get_tiles(DEFAULT):
-    tiles = [character['TileName'] for character in DEFAULT['Tiles']]
+    tiles = [tile['TileName'] for tile in DEFAULT['Tiles']]
     return tiles
 
 
@@ -55,3 +55,9 @@ def get_players(conn, handler_key, game_id):
     player_data = data.get_all(conn, handler_key, game_id)
     players = [player[1] for player in player_data]
     return players
+
+
+# Gets all of the item names.
+def get_items(DEFAULT):
+    items = [item['ItemName'] for item in DEFAULT['Items']]
+    return items
