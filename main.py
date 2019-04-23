@@ -16,6 +16,9 @@ handler = config.HANDLER
 # Renders the home page.
 @app.route('/')
 def index():
+    #games = helpers.get_games(conn, handler['Game'])
+    #return render_template('index.html', games=games)
+
     return render_template('index.html')
 
 

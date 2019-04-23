@@ -38,6 +38,13 @@ def insert_new_game_values(conn, handler, game_id, DEFAULT):
     data.insert_many(conn, handler['Tile'], tiles)
 
 
+# Get all the game id's
+def get_games(conn, handler_key):
+    game_data = data.get_game_ids(conn, handler_key)
+    games = [game[1] for game in game_data]
+    return games
+
+
 # Gets all of the character names.
 def get_characters(DEFAULT):
     characters = [character['CharacterName'] for character in DEFAULT['Characters']]

@@ -75,7 +75,6 @@ def get_all(conn, game_id):
     query = f'''
         SELECT *
         FROM Betrayal.Game G
-        WHERE G.GameID = {game_id};
         '''
     cursor.execute(query)
     rows = cursor.fetchall()

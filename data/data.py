@@ -53,7 +53,7 @@ def update(conn, handler_key, id, setter):
     handler_key['Update'](conn, id, setter)
 
 
-# Gets a list of all the GameID's for the splash page
-def get_game_id_list(conn, handler_key):
+# Gets all the game id's for the splash page
+def get_game_ids(conn, handler_key):
     game_ids = handler_key['Get_Game_IDs'](conn)
     return game_ids
