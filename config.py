@@ -18,8 +18,7 @@ HANDLER = {
         'Get_One': game.get_one,
         'Get_All': game.get_all,
         'Get_Column_Names': game.get_column_names,
-        'Update': game.update,
-        'Get_Game_IDs': game.get_game_id_list
+        'Update': game.update
     },
     'Card': {
         'Create': card.create_table,

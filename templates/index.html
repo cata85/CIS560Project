@@ -23,7 +23,12 @@
       <div class="form-group">
         <form action="/join" method="POST">
           <div id="textboxpadding">
-            <input type="text" name="gameIDtextbox" class="form-control" id="gameIDtextbox" placeholder="GameID">
+            <!-- <input type="text" name="gameIDtextbox" class="form-control" id="gameIDtextbox" placeholder="GameID"> -->
+            <select name="game_select" class="form-control">
+              {% for game in games %}
+                <option value="{{ game }}">{{ game }}</option>
+              {% endfor %}
+            </select>
           </div>
           <button type="submit" class="btn btn-secondary" id="gameID_Select_btn">SELECT</button></a>
         </form>

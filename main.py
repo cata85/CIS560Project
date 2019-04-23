@@ -16,9 +16,8 @@ handler = config.HANDLER
 # Renders the home page.
 @app.route('/')
 def index():
-    #games = helpers.get_games(conn, handler['Game'])
-    #return render_template('index.html', games=games)
-    return render_template('index.html')
+    games = helpers.get_games(conn, handler['Game'])
+    return render_template('index.html', games=games)
 
 
 # Joins an existing game based on the provided game_id or creates a new one if not provided.
@@ -26,7 +25,7 @@ def index():
 def join():
     handler_key = handler['Game']
     if request.method == 'POST':
-        game_id = request.form['gameIDtextbox']
+        game_id = request.form['game_select']
         if game_id.isnumeric():
             row = data.get_one(conn, handler_key, game_id)
             if row:

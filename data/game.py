@@ -99,15 +99,3 @@ def update(conn, game_id, setter):
     cursor.execute(query)
     conn.commit()
     cursor.close()
-
-# Gets the list of GameID's for the splash page dropdown menu
-def get_game_id_list(conn):
-    cursor = conn.cursor()
-    query = f'''
-        SELECT G.GameID
-        FROM Betrayal.Game G
-        '''
-    cursor.execute(query)
-    rows = cursor.fetchall()
-    cursor.close()
-    return rows

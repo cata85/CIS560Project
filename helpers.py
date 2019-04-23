@@ -40,8 +40,8 @@ def insert_new_game_values(conn, handler, game_id, DEFAULT):
 
 # Get all the game id's
 def get_games(conn, handler_key):
-    game_data = data.get_game_ids(conn, handler_key)
-    games = [game[1] for game in game_data]
+    game_data = data.get_all(conn, handler_key)
+    games = [game[0] for game in game_data]
     return games
 
 
