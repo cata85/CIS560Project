@@ -51,4 +51,9 @@ def get_column_names(handler_key):
 # Updates a single element in a column where id is the key, setter is a string of the form "ColumnName = value"
 def update(conn, handler_key, id, setter):
     handler_key['Update'](conn, id, setter)
-    
+
+
+# Gets a list of all the GameID's for the splash page
+def get_game_id_list(conn, handler_key):
+    game_ids = handler_key['Get_Game_IDs'](conn)
+    return game_ids
