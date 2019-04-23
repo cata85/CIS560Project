@@ -47,7 +47,8 @@ HANDLER = {
         'Get_One': tile.get_one,
         'Get_All': tile.get_all,
         'Get_Column_Names': tile.get_column_names,
-        'Update': tile.update
+        'Update': tile.update,
+        'Get_Tile_ID': tile.get_tile_id
     },
     'Character': {
         'Create': character.create_table,

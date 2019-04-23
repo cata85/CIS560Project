@@ -109,3 +109,17 @@ def update(conn, tile_id, setter):
     cursor.execute(query)
     conn.commit()
     cursor.close()
+
+
+# Gets the TileID given the TileName and GameID
+def get_tile_id(conn, tile_name, game_id):
+    cursor = conn.cursor()
+    query = f'''
+        SELECT T.TileID
+        FROM Betrayal.Tile T
+        WHERE T.GameID = {game_id} AND T.TileName = {tile_name}
+        '''
+    cursor.execute(query)
+    tile_id = cursor.fetchone()
+    cursor.close()
+    return tile_id
