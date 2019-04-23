@@ -166,17 +166,28 @@
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Insert into Character table</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
       </div>
 
         <div class="modal-body">
           <div class="form-row">
             <div class="col">
               <label>Player Name</label>
-              <input type="text" class="form-control" placeholder="First name">
+              <select name="player_name" class="form-control">
+                {% if players %}
+                  {% for player in players %}
+                  <option value="{{ player }}">{{ player }}</option>
+                  {% endfor %}
+                {% endif %}
+              </select>
             </div>
             <div class="col">
               <label>Character Name</label>
-              <input type="text" class="form-control" placeholder="Last name">
+              <select name="character_name" class="form-control" placeholder="Last name">
+                  {% for character in characters %}
+                  <option value="{{ character }}">{{ character }}</option>
+                  {% endfor %}
+              </select>
             </div>
           </div>
           <br/>
@@ -220,7 +231,7 @@
         
         </div>
         <div class="modal-footer">
-         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
+         <button type="submit" style="color:white;" class="btn btn-success">Insert</button>
      
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
