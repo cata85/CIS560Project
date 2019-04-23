@@ -28,6 +28,18 @@
    <div id="gameForm">
      <table id="gameTable">
        <tr>
+          <td><h4>Games:</h4></td>
+
+          <!--SELECT BUTTON -->
+           <form action="/game/{{ game_id }}/select/Game" method="GET">
+            <td><button type="submit" class="btn btn-secondary" id="game_Select_btn">SELECT</button></td>
+           </form>
+ 
+           <!-- INSERT BUTTON -->
+           <td><button type="submit" class="btn btn-secondary" id="game_Insert_btn" disabled="true">INSERT</button></td>
+
+          </tr>
+
          <td><h4>Players:</h4></td>
 
          <!--SELECT BUTTON -->
@@ -36,7 +48,6 @@
           </form>
 
           <!-- INSERT BUTTON -->
-
           <td><button type="button" style="color:white;" class="btn btn-secondary" data-toggle="modal" data-target="#insert_player_modal">INSERT</button></td>
 
 
