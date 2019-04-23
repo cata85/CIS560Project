@@ -36,3 +36,25 @@ def insert_new_game_values(conn, handler, game_id, DEFAULT):
     tiles = list((int(game_id), tile['TileName'], tile['Floor'], 'Not Played') for tile in DEFAULT['Tiles'])
     data.insert_many(conn, handler['Card'], cards)
     data.insert_many(conn, handler['Tile'], tiles)
+
+
+# Gets all of the character names.
+def get_characters(DEFAULT):
+    characters = [character['CharacterName'] for character in DEFAULT['Characters']]
+    return characters
+
+
+# Gets all of the tile names.
+def get_tiles(DEFAULT):
+    tiles = [character['TileName'] for character in DEFAULT['Tiles']]
+    return tiles
+
+
+# Gets all of the player names in a given game.
+def get_players(conn, handler_key, game_id):
+    player_data = data.get_all(conn, handler_key, game_id)
+    try:
+        players = [player['PlayerName'] for player in player_data]
+    except:
+        players = None
+    return players
