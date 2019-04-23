@@ -103,30 +103,6 @@
 
 
 
-<!-- PLAYER Modal -->
-<div id="insert_player_modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <form action="/game/{{ game_id }}/insert/Player" method="POST">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title">Insert into Player table</h4>
-      </div>
-      <div class="modal-body">
-
-
-      </div>
-        <div class="modal-footer">
-         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
-
-      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </form>
-  </div>
-</div>
-
 <!-- UPDATE Modal -->
 <div id="update_modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -137,16 +113,10 @@
       <div class="modal-header">
         <h4 class="modal-title">Insert into Player table</h4>
       </div>
+      <div class="modal-body">
+        
 
-        <div class="modal-body">
-          Column(s): PlayerName <br>
-
-          <br>
-          <br>
-          Enter the required info. Seperate values with commas.
-      
-        <textarea class="form-control" rows="1" name="setterTextbox" id="setterTextbox" placeholder="Name"></textarea>
-        </div>
+      </div>
         <div class="modal-footer">
          <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
 
@@ -157,9 +127,39 @@
   </div>
 </div>
 
+<!-- PLAYER Modal -->
+<div id="insert_player_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <form action="/game/{{ game_id }}/insert/Player" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Insert into Player table</h4>
+      </div>
+
+        <div class="modal-body">
+          
+          <div class="form-group">
+            <label>Player Name</label>
+            <input type="text" class="form-control" name="setterTextbox" id="setterTextbox"/>
+            <small>*This is required</small>
+          </div>
+       
+        </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-primary">Insert</button>
+
+      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+
 <!-- CHARACTER Modal -->
 <div id="insert_character_modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
 
     <!-- Modal content-->
     <form action="/game/{{ game_id }}/insert/Character" method="POST">
@@ -169,13 +169,55 @@
       </div>
 
         <div class="modal-body">
-          Column(s): PlayerName, CharacterName <br>
-
-          <br>
-          <br>
-          Enter the required info. Seperate values with commas.
+          <div class="form-row">
+            <div class="col">
+              <label>Player Name</label>
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <label>Character Name</label>
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+          <br/>
+          <div class="form-group">
+              <labe>Tile Name</labe>
+              <select class="form-control" id="exampleFormControlSelect1">
+                  {% for tile in tiles %}
+                    <option value="{{ tile }}">{{ tile }}</option>
+                  {% endfor %}
+                </select>
+          </div>
+          <div class="form-group">
+              <div class="table-responsive">
+                  <table class="table table-bordered ">
+                    <tr>
+                      <th colspan="2">STATS</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>Speed</label>
+                        <input min="0" max="8" value="3" type="number" name="speed" class="form-control"/>
+                        </td>
+                      <td>
+                        <label>Might</label>
+                        <input min="0" max="8" value="3" type="number" name="might" class="form-control"/></td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label>Sanity</label>
+                        <input min="0" max="8" value="3" type="number" name="sanity" class="form-control"/>
+                        </td>
+                      <td colspan="1"> 
+                        <label>Knowledge</label>
+                        <input min="0" max="8" value="3" type="number"name="knowledge" class="form-control"/></td>
+                    </tr>
+                  </table>
+            
+                </div>
+          </div>
      
-        <textarea class="form-control" rows="1" name="setterTextbox" id="setterTextbox" placeholder="PlayerID, CharacterName, TileID, Speed, Might, Sanity, Knowledge"></textarea>
+        
         </div>
         <div class="modal-footer">
          <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
@@ -190,7 +232,7 @@
 
 <!-- ITEM Modal -->
 <div id="insert_item_modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
 
     <!-- Modal content-->
     <form action="/game/{{ game_id }}/insert/Item" method="POST">
