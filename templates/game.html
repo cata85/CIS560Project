@@ -34,7 +34,7 @@
            <form action="/game/{{ game_id }}/select/Game" method="GET">
             <td><button type="submit" class="btn btn-secondary" id="game_Select_btn">SELECT</button></td>
            </form>
- 
+
            <!-- INSERT BUTTON -->
            <td><button type="submit" class="btn btn-secondary" id="game_Insert_btn" disabled="true">INSERT</button></td>
 
@@ -114,22 +114,36 @@
 
 
 
-<!-- UPDATE Modal -->
-<div id="update_modal" class="modal fade" role="dialog">
+<!-- UPDATE GAME Modal -->
+<div id="update_game_modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <form action="/game/{{ game_id }}/insert/Player" method="POST">
+    <form action="/game/{{ game_id }}/update/Game" method="POST">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Insert into Player table</h4>
+        <h4 class="modal-title">Update Game Table</h4>
       </div>
       <div class="modal-body">
-        
+        <div class="form-group">
+            <div class="table-responsive">
+                <table class="table table-bordered ">
+                  <tr>
+                    <td>
+                      <label>Haunt</label>
+                      <input min="0" max="50" value="0" type="number" name="haunt_game" class="form-control"/>
+                      </td>
+                    <td>
+                      <label>TrackValue</label>
+                      <input min="0" max="12" value="0" type="number" name="track_value_game" class="form-control"/></td>
+                  </tr>
+                </table>
+              </div>
+        </div>
 
       </div>
         <div class="modal-footer">
-         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
+         <button type="submit" style="color:white;" class="btn btn-success">Update</button>
 
       <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
@@ -137,6 +151,215 @@
   </form>
   </div>
 </div>
+
+
+<!-- UPDATE CHARACTER Modal -->
+<div id="update_character_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <form action="/game/{{ game_id }}/update/Character" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Update Character Table</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+            <label>Tile Name</label>
+            <select name='tile_name_character' class="form-control" id="exampleFormControlSelect1">
+                {% for tile in tiles %}
+                  <option value="{{ tile }}">{{ tile }}</option>
+                {% endfor %}
+              </select>
+        </div>
+        <div class="form-group">
+            <div class="table-responsive">
+                <table class="table table-bordered ">
+                  <tr>
+                    <th colspan="2">STATS</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Speed</label>
+                      <input min="0" max="8" value="3" type="number" name="speed_character" class="form-control"/>
+                      </td>
+                    <td>
+                      <label>Might</label>
+                      <input min="0" max="8" value="3" type="number" name="might_character" class="form-control"/></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label>Sanity</label>
+                      <input min="0" max="8" value="3" type="number" name="sanity_character" class="form-control"/>
+                      </td>
+                    <td colspan="1">
+                      <label>Knowledge</label>
+                      <input min="0" max="8" value="3" type="number"name="knowledge_character" class="form-control"/></td>
+                  </tr>
+                </table>
+              </div>
+        </div>
+      </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-success">Update</button>
+
+      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+  </form>
+  </div>
+</div>
+</div>
+
+
+
+<!-- UPDATE Tile Modal -->
+<div id="update_tile_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <form action="/game/{{ game_id }}/update/Tile" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Update Tile Table</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Floor</label>
+          <select name="floor_tile" class="form-control">
+            <option value="Basement">Basement</option>
+            <option value="Ground">Ground</option>
+            <option value="Upper">Upper</option>
+
+          </select>
+      </div>
+
+      <div class="form-group">
+        <label>State</label>
+        <select name="state_tile" class="form-control">
+          <option value="Played">Played</option>
+          <option value="NotPlayed">Not Played</option>
+        </select>
+    </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-success">Update</button>
+
+      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+
+<!-- UPDATE Items Modal -->
+<div id="update_item_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <form action="/game/{{ game_id }}/update/Item" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Update Item Table</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Tile Name</label>
+          <select name="tile__name_item" class="form-control">
+            {% for tile in tiles %}
+              <option value="{{ tile }}">{{ tile }}</option>
+            {% endfor %}
+          </select>
+      </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-success">Update</button>
+
+      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+
+<!-- UPDATE Monster Modal -->
+<div id="update_monster_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <form action="/game/{{ game_id }}/update/Monster" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Update Monster Table</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>Tile Name</label>
+          <select name="tile__name_monster" class="form-control">
+            {% for tile in tiles %}
+              <option value="{{ tile }}">{{ tile }}</option>
+            {% endfor %}
+          </select>
+      </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-success">Update</button>
+
+      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+
+<!-- UPDATE card Modal -->
+<div id="update_card_modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <form action="/game/{{ game_id }}/update/Card" method="POST">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Update Card Table</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>State</label>
+          <select name="state_card" class="form-control">
+            <option value="Played">Played</option>
+            <option value="NotPlayed">Not Played</option>
+          </select>
+      </div>
+        <div class="modal-footer">
+         <button type="submit" style="color:white;" class="btn btn-success">Update</button>
+
+      <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </form>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- PLAYER Modal -->
 <div id="insert_player_modal" class="modal fade" role="dialog">
@@ -150,16 +373,16 @@
       </div>
 
         <div class="modal-body">
-          
+
           <div class="form-group">
             <label>Player Name</label>
             <input type="text" class="form-control" name="player_name_player" id="setterTextbox"/>
             <small>*This is required</small>
           </div>
-       
+
         </div>
         <div class="modal-footer">
-         <button type="submit" style="color:white;" class="btn btn-primary">Insert</button>
+         <button type="submit" style="color:white;" class="btn btn-success">Insert</button>
 
       <button type="button" id="card_Update_btn" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
@@ -230,20 +453,20 @@
                         <label>Sanity</label>
                         <input min="0" max="8" value="3" type="number" name="sanity_character" class="form-control"/>
                         </td>
-                      <td colspan="1"> 
+                      <td colspan="1">
                         <label>Knowledge</label>
                         <input min="0" max="8" value="3" type="number"name="knowledge_character" class="form-control"/></td>
                     </tr>
                   </table>
-            
+
                 </div>
           </div>
-     
-        
+
+
         </div>
         <div class="modal-footer">
          <button type="submit" style="color:white;" class="btn btn-success">Insert</button>
-     
+
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -283,9 +506,9 @@
         </div>
 
         <div class="modal-footer">
-         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
-      
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+         <button type="submit" style="color:white;" class="btn btn-success">Insert</button>
+
+      <button type="button" class="btn btn-btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </form>
@@ -323,8 +546,8 @@
         </div>
 
         <div class="modal-footer">
-         <button type="submit" style="color:white;" class="btn btn-secondary">Insert</button>
-     
+         <button type="submit" style="color:white;" class="btn btn-success">Insert</button>
+
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
@@ -354,8 +577,21 @@
                 {% for col in entry %}
                   <td>{{ col }}</td>
                 {% endfor %}
-
-                <td><button data-toggle="modal" data-target="#update_modal" class="btn btn-primary">UPDATE</button></td>
+                {%if table_name == 'Player' %}
+                <!-- no update button for player-->
+                {%elif table_name == 'Game'%}
+                  <td><button data-toggle="modal" data-target="#update_game_modal" class="btn btn-primary">UPDATE</button></td>
+                {%elif table_name == 'Character'%}
+                  <td><button data-toggle="modal" data-target="#update_character_modal" class="btn btn-primary">UPDATE</button></td>
+                {%elif table_name == 'Tile'%}
+                  <td><button data-toggle="modal" data-target="#update_tile_modal" class="btn btn-primary">UPDATE</button></td>
+                {%elif table_name == 'Item'%}
+                    <td><button data-toggle="modal" data-target="#update_item_modal" class="btn btn-primary">UPDATE</button></td>
+                {%elif table_name == 'Monster'%}
+                    <td><button data-toggle="modal" data-target="#update_monster_modal" class="btn btn-primary">UPDATE</button></td>
+                {%elif table_name == 'Card'%}
+                    <td><button data-toggle="modal" data-target="#update_card_modal" class="btn btn-primary">UPDATE</button></td>
+                {% endif %}
               </tr>
             {% endfor %}
         </tbody>

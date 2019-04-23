@@ -38,7 +38,7 @@ def join():
 
 # Generates the requested game page
 @app.route('/game/<int:game_id>', methods=['GET'])
-def game(game_id, rows=None, column_names=None, players=None, characters=config.CHARACTERS, 
+def game(game_id, rows=None, column_names=None, players=None, characters=config.CHARACTERS,
         tiles=config.TILES, items=config.ITEMS, monsters=config.MONSTERS):
     players = helpers.get_players(conn, handler['Player'], game_id)
     return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names,
@@ -56,8 +56,9 @@ def select(game_id, table):
     tiles = config.TILES
     items = config.ITEMS
     monsters = config.MONSTERS
+    table_name = table
     return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names,
-        players=players, characters=characters, tiles=tiles, items=items, monsters=monsters)
+        players=players, characters=characters, tiles=tiles, items=items, monsters=monsters, table_name=table_name)
 
 # Inserts row for the given table.
 @app.route('/game/<int:game_id>/insert/<string:table>', methods=['POST'])
