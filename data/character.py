@@ -123,19 +123,28 @@ def update(conn, row):
     if row:
         try:
             row = (int(row[1]), str(row[2]), int(row[3]), int(row[4]), int(row[5]), int(row[6]))
-
-    query = f'''
-        UPDATE Betrayal.Character
-        SET 
-            TileID = T.TileID,
-            Speed = {row[3]},
-            Might = {row[4]},
-            Sanity = {row[5]},
-            Knowledge = {row[6]}
-        FROM Betrayal.Tile T
-            INNER JOIN Betrayal.Monster M ON T.TileID = M.TileID
-        WHERE C.CharacterID = {row[1]} AND T.TileName = {row[2]}
-        '''
-    cursor.execute(query)
-    conn.commit()
+        except:
+            return character_id
+        query = f'''
+            UPDATE Betrayal.Character
+            SET 
+                TileID = T.TileID,
+                Speed = {row[3]},
+                Might = {row[4]},
+                Sanity = {row[5]},
+                Knowledge = {row[6]}
+            FROM Betrayal.Tile T
+                INNER JOIN Betrayal.Monster M ON T.TileID = M.TileID
+            WHERE C.CharacterID = {row[1]} AND T.TileName = {row[2]}
+            '''
+        try:
+            cursor.execute(query)
+            conn.commit()
+            character_id = cursor.lastrowid
+        except:
+            cursor.close()
+            return character_id
+    else:
+        print('ERROR: Input data incorrect')
     cursor.close()
+    return character_id
