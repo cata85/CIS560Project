@@ -88,23 +88,29 @@ def update(game_id, table):
     if request.method == 'POST':
         handler_key = handler[table]
         if table == 'Game':
+            game_id = 1 
             row = (game_id, request.form['haunt_game'], request.form['track_value_game'])
             data.update(conn, handler_key, row)
         elif table == 'Character':
-            row = (game_id, request.form['player_name_character'], request.form['character_name_character'], request.form['tile_name_character'],
-                request.form['speed_character'], request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
+            character_id = 1 # Needs Changed
+            row = (character_id, request.form['tile_name_character'], request.form['speed_character'], 
+                request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
             data.update(conn, handler_key, row)
         elif table == 'Tile':
-            row = (game_id, request.form['floor_tile'], request.form['state_tile'])
+            tile_id = 1 # Needs Changed
+            row = (tile_id, request.form['floor_tile'], request.form['state_tile'])
             data.update(conn, handler_key, row)
         elif table == 'Item':
-            row = (game_id, request.form['tile__name_item'])
+            item_id = 1 # Needs Changed
+            row = (item_id, request.form['tile__name_item'])
             data.update(conn, handler_key, row)
         elif table == 'Monster':
-            row = (game_id, request.form['tile__name_monster'])
+            monster_id = 1 # Needs Changed
+            row = (monster_id, request.form['tile__name_monster'])
             data.update(conn, handler_key, row)
         elif table == 'Card':
-            row = (game_id, request.form['state_card'])
+            card_id = 1 # Needs Changed
+            row = (card_id, request.form['state_card'])
             data.update(conn, handler_key, row)
     return redirect(url_for('game', game_id=game_id))
 

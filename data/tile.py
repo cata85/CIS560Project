@@ -99,27 +99,29 @@ def get_column_names():
 
 # Updates an element for a specific Tile
 # the 'setter' parameter will be a string Example: "State = N'Played'"
-def update(conn, tile_id, setter):
+def update(conn, row):
     cursor = conn.cursor()
-    query = f'''
-        UPDATE Betrayal.Tile
-        SET {setter}
-        WHERE TileID = {tile_id}
-        '''
-    cursor.execute(query)
-    conn.commit()
-    cursor.close()
-
-
-# Gets the TileID given the TileName and GameID
-def get_tile_id(conn, tile_name, game_id):
-    cursor = conn.cursor()
-    query = f'''
-        SELECT T.TileID
-        FROM Betrayal.Tile T
-        WHERE T.GameID = {game_id} AND T.TileName = {tile_name}
-        '''
-    cursor.execute(query)
-    tile_id = cursor.fetchone()
+    tile_id = -1
+    if row:
+        try:
+            row = (int(row[1]), str(row[2]), str(row[3]))
+        except:
+            return tile_id
+        query = f'''
+            UPDATE Betrayal.Tile
+            SET 
+                Floor = {row[2]}
+                State = {row[3]}
+            WHERE TileID = {row[1]}
+            '''
+        try:
+            cursor.execute(query)
+            conn.commit()
+            tile_id = cursor.lastrowid
+        except:
+            cursor.close
+            return tile_id
+    else:
+        print('ERROR: Input data incorrect')
     cursor.close()
     return tile_id

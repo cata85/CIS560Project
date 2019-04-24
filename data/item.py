@@ -101,13 +101,29 @@ def get_column_names():
 
 # Updates an element for a specific Item
 # the 'setter' parameter will be a string Example: "TileID = 14"
-def update(conn, item_id, setter):
+def update(conn, row):
     cursor = conn.cursor()
-    query = f'''
-        UPDATE Betrayal.Monster
-        SET {setter}
-        WHERE ItemID = {item_id}
-        '''
-    cursor.execute(query)
-    conn.commit()
+    item_id = -1
+    if row:
+        try:
+            row = (int(row[1]), str(row[2]))
+        except:
+            return item_id
+        query = f'''
+            UPDATE Betrayal.Item
+            SET TileID = T.TileID
+            FROM Betrayal.Tile T
+                INNER JOIN Betrayal.Item I ON T.TileID = I.TileID
+            WHERE I.ItemID = {row[1]} AND T.TileName = {row[2]}
+            '''
+        try:
+            cursor.execute(query)
+            conn.commit()
+            item_id = cursor.lastrowid
+        except:
+            cursor.close
+            return item_id
+    else:
+        print('ERROR: Input data incorrect')
     cursor.close()
+    return item_id

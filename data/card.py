@@ -99,13 +99,27 @@ def get_column_names():
 
 # Updates an element for a specific Card
 # the 'setter' parameter will be a string Example: "State = N'Played'"
-def update(conn, card_id, setter):
+def update(conn, row):
     cursor = conn.cursor()
-    query = f'''
-        UPDATE Betrayal.Card
-        SET {setter}
-        WHERE CardID = {card_id}
-        '''
-    cursor.execute(query)
-    conn.commit()
+    card_id = -1
+    if row:
+        try:
+            row = (str(row[1]), str(row[2]))
+        except:
+            return card_id
+        query = f'''
+            UPDATE Betrayal.Monster
+            SET State = {row[2]}
+            WHERE CardID = {row[1]}
+            '''
+        try:
+            cursor.execute(query)
+            conn.commit()
+            card_id = cursor.lastrowid
+        except:
+            cursor.close
+            return card_id
+    else:
+        print('ERROR: Input data incorrect')
     cursor.close()
+    return card_id

@@ -95,15 +95,30 @@ def get_column_names():
     return ['GameID', 'StartDate', 'Haunt', 'TrackValue']
 
 
-# Updates an element for a specific Game
-# the 'setter' parameter will be a string Example: "HauntID = 23"
-def update(conn, game_id, setter):
+# Updates all updateable colunns for a specific Game
+def update(conn, row):
     cursor = conn.cursor()
-    query = f'''
-        UPDATE Betrayal.Game
-        SET {setter}
-        WHERE GameID = {game_id}
-        '''
-    cursor.execute(query)
-    conn.commit()
+    game_id = -1
+    if row:
+        try:
+            row = (int(row[1]), int(row[2]), int(row[3]))
+        except:
+            return game_id
+        query = f'''
+            UPDATE Betrayal.Game
+            SET    
+                Haunt = {row[2]}
+                TrackValue = {row[3]} 
+            WHERE GameID = {row[1]}
+            '''
+        try:
+            cursor.execute(query)
+            conn.commit()
+            game_id = cursor.lastrowid
+        except:
+            cursor.close()
+            return game_id
+    else:
+        print('ERROR: Input data incorrect.')
     cursor.close()
+    return game_id

@@ -47,8 +47,7 @@ HANDLER = {
         'Get_One': tile.get_one,
         'Get_All': tile.get_all,
         'Get_Column_Names': tile.get_column_names,
-        'Update': tile.update,
-        'Get_Tile_ID': tile.get_tile_id
+        'Update': tile.update
     },
     'Character': {
         'Create': character.create_table,
@@ -81,7 +80,7 @@ HANDLER = {
         'Update': item.update
     }
 }                                                                # Handler for all the tables.
-FRESH = True                                                    # Start database from scratch.
+FRESH = False                                                    # Start database from scratch.
 DEFAULT, INIT = helpers.get_values(FRESH)                        # Gets the default values and the initial values for the game.
 CHARACTERS = helpers.get_characters(DEFAULT)                     # Gets all the character names.
 TILES = helpers.get_tiles(DEFAULT)                               # Gets all the tile names.
