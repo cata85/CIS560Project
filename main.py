@@ -85,9 +85,27 @@ def insert(game_id, table):
 # TODO: This needs lots of error handling with values sent.
 @app.route('/game/<int:game_id>/update/<string:table>', methods=['POST'])
 def update(game_id, table):
-    handler_key = handler[table]
-    setter = request.form['setterTextbox']
-    data.update(conn, handler_key, game_id, setter)
+    if request.method == 'POST':
+        handler_key = handler[table]
+        if table == 'Game':
+            row = (game_id, request.form['haunt_game'], request.form['track_value_game'])
+            data.update(conn, handler_key, row)
+        elif table == 'Character':
+            row = (game_id, request.form['player_name_character'], request.form['character_name_character'], request.form['tile_name_character'],
+                request.form['speed_character'], request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
+            data.update(conn, handler_key, row)
+        elif table == 'Tile':
+            row = (game_id, request.form['floor_tile'], request.form['state_tile'])
+            data.update(conn, handler_key, row)
+        elif table == 'Item':
+            row = (game_id, request.form['tile__name_item'])
+            data.update(conn, handler_key, row)
+        elif table == 'Monster':
+            row = (game_id, request.form['tile__name_monster'])
+            data.update(conn, handler_key, row)
+        elif table == 'Card':
+            row = (game_id, request.form['state_card'])
+            data.update(conn, handler_key, row)
     return redirect(url_for('game', game_id=game_id))
 
 

@@ -48,6 +48,6 @@ def get_column_names(handler_key):
     return column_names
 
 
-# Updates a single element in a column where id is the key, setter is a string of the form "ColumnName = value"
-def update(conn, handler_key, id, setter):
-    handler_key['Update'](conn, id, setter)
+# Updates a single element in a column where id is the key, row holds all the data necessary for the update
+def update(conn, handler_key, row):
+    handler_key['Update'](conn, row)

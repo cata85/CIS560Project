@@ -117,8 +117,14 @@ def get_column_names():
 
 
 # Updates an element for a specific CharacterID
-def update(conn, character_id, setter):
+def update(conn, row, game_id):
     cursor = conn.cursor()
+    character_id = -1
+    if row
+        try: 
+            row = 
+        except: 
+            return character_id
     query = f'''
         UPDATE Betrayal.Character
         SET {setter}
