@@ -54,11 +54,16 @@ def insert_one(conn, row, game_id):
             FROM (VALUES {row}) AS V(PlayerName, CharacterName, TileName, Speed, Might, Sanity, Knowledge)
                 INNER JOIN Betrayal.Player P ON P.PlayerName = V.PlayerName
                 INNER JOIN Betrayal.Tile T ON T.TileName = V.TileName
-            WHERE P.GameID = {game_id};
+            WHERE P.GameID = {game_id}
+                AND T.GameID = {game_id};
             '''
-        cursor.execute(query, row)
-        conn.commit()
-        character_id = cursor.lastrowid
+        try:
+            cursor.execute(query)
+            conn.commit()
+            character_id = cursor.lastrowid
+        except:
+            cursor.close()
+            return character_id
     else:
         print('ERROR: Cannot set default values for table Character. Must give foreign key.')
     cursor.close()

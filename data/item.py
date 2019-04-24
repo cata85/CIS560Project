@@ -33,12 +33,21 @@ def insert_one(conn, row, game_id):
     cursor = conn.cursor()
     item_id = -1
     if row:
+        row = (row[1], row[2])
         query = f'''
-            INSERT INTO Betrayal.Item VALUES {row};
+            INSERT Betrayal.Item(TileID, ItemName)
+            SELECT T.TileID, V.ItemName
+            FROM (VALUES {row}) AS V(TileName, ItemName)
+                INNER JOIN Betrayal.Tile T ON T.TileName = V.TileName
+            WHERE T.GameID = {game_id};
             '''
-        cursor.execute(query)
-        conn.commit()
-        item_id = cursor.lastrowid
+        try:
+            cursor.execute(query)
+            conn.commit()
+            item_id = cursor.lastrowid
+        except:
+            cursor.close()
+            return item_id
     else:
         print('ERROR: Cannot set default values for table Item. Must give foreign key.')
     cursor.close()

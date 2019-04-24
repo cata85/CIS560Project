@@ -73,11 +73,11 @@ def insert(game_id, table):
                 request.form['speed_character'], request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
             data.insert_one(conn, handler_key, row, game_id)
         elif table == 'Item':
-            row = (game_id, request.form['item_name_item'], request.form['tile_name_item'])
-            data.insert_one(conn, handler_key, row)
+            row = (game_id, request.form['tile_name_item'], request.form['item_name_item'])
+            data.insert_one(conn, handler_key, row, game_id)
         elif table == 'Monster':
-            row = (game_id, request.form['monster_name_monster'], request.form['tile_name_monster'])
-            data.insert_one(conn, handler_key, row)
+            row = (game_id, request.form['tile_name_monster'], request.form['monster_name_monster'])
+            data.insert_one(conn, handler_key, row, game_id)
     return redirect(url_for('game', game_id=game_id))
 
 
