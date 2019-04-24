@@ -117,18 +117,37 @@ def get_column_names():
 
 
 # Updates an element for a specific CharacterID
-def update(conn, row, game_id):
+def update(conn, row):
     cursor = conn.cursor()
     character_id = -1
     if row
         try: 
-            row = 
+            row = (int(row[0]), str(row[1]), str(row[2]), str(row[3]), int(row[4]), int(row[5]), int(row[6]), int(row[7]))
         except: 
             return character_id
     query = f'''
+        WITH CTE_Character (CharacterID, GameID) AS
+        (
+            SELECT C.CharacterID, P.GameID
+                FROM Betrayal.Player
+                INNER JOIN Betrayal.Character C ON P.PlayerID = C.PlayerID
+            WHERE C.CharacterName = {row[2]} AND C.PlayerName = {row[1]} AND P.GameID = {row[0]}
+        )
+        WITH CTE_Tile (TileID, GameID) AS
+        (
+            SELECT T.TileID, T.GameID
+            FROM Betrayal.Tile T
+            WHERE T.GameID = {row[0]} AND T.TileName = {row[2]}
+        )
         UPDATE Betrayal.Character
-        SET {setter}
-        WHERE CharacterID = {character_id}
+        SET
+            TileID = T.TileID
+            Speed = {row[4]},
+            Might = {row[5]},
+            Sanity = {row[6]},
+            Knowledge = {row[7]}
+        FROM CTE_Character CTE_C
+            INNER JOIN CTE_Tile CTE_T ON CTE_C.GameID = CTE_T.GameID
         '''
     cursor.execute(query)
     conn.commit()
