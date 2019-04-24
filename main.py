@@ -88,28 +88,28 @@ def update(game_id, table):
     if request.method == 'POST':
         handler_key = handler[table]
         if table == 'Game':
-            update_game_id = 1 # Needs changed
+            update_game_id = request.form['update_game_id']
             row = (update_game_id, request.form['haunt_game'], request.form['track_value_game'])
             data.update(conn, handler_key, row)
         elif table == 'Character':
-            update_character_id = 1 # Needs Changed
+            update_character_id = request.form['update_character_id']
             row = (update_character_id, request.form['tile_name_character'], request.form['speed_character'], 
                 request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
             data.update(conn, handler_key, row)
         elif table == 'Tile':
-            update_tile_id = 1 # Needs Changed
+            update_tile_id = request.form['update_tile_id']
             row = (update_tile_id, request.form['floor_tile'], request.form['state_tile'])
             data.update(conn, handler_key, row)
         elif table == 'Item':
-            update_item_id = 1 # Needs Changed
+            update_item_id = request.form['update_item_id']
             row = (update_item_id, request.form['tile__name_item'])
             data.update(conn, handler_key, row)
         elif table == 'Monster':
-            update_monster_id = 1 # Needs Changed
+            update_monster_id = request.form['update_monster_id']
             row = (update_monster_id, request.form['tile__name_monster'])
             data.update(conn, handler_key, row)
         elif table == 'Card':
-            update_card_id = 1 # Needs Changed
+            update_card_id = request.form['update_card_id']
             row = (update_card_id, request.form['state_card'])
             data.update(conn, handler_key, row)
     return redirect(url_for('game', game_id=game_id))
