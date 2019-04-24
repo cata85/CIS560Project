@@ -29,7 +29,7 @@ def drop_table(conn):
     
 
 # Inserts one Monster and returns that MonsterID.
-def insert_one(conn, row):
+def insert_one(conn, row, game_id):
     cursor = conn.cursor()
     monster_id = -1
     if row:

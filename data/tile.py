@@ -37,7 +37,7 @@ def drop_table(conn):
     
 
 # Inserts one Tile and returns that TileID.
-def insert_one(conn, row):
+def insert_one(conn, row, game_id):
     cursor = conn.cursor()
     tile_id = -1
     if row:

@@ -37,7 +37,7 @@ def drop_table(conn):
 
 
 # Inserts one Card and returns that CardID.
-def insert_one(conn, row):
+def insert_one(conn, row, game_id):
     cursor = conn.cursor()
     card_id = -1
     if row:

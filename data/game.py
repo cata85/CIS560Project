@@ -29,7 +29,7 @@ def drop_table(conn):
 
 
 # Inserts one Game and returns that GameID.
-def insert_one(conn, row):
+def insert_one(conn, row, game_id):
     cursor = conn.cursor()
     if row:
         query = f'''

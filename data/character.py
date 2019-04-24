@@ -21,8 +21,7 @@ def create_table(conn):
 
             UNIQUE
             (
-                PlayerID ASC,
-                CharacterName ASC
+                PlayerID ASC
             )
         );
         ''' 
@@ -41,16 +40,21 @@ def drop_table(conn):
 
 
 # Inserts one Character and returns that CharacterID.
-def insert_one(conn, row):
+def insert_one(conn, row, game_id):
     cursor = conn.cursor()
     character_id = -1
     if row:
         try:
-            row = [int(row[0]), str(row[1]), int(row[2]), int(row[3]), int(row[4]), int(row[5]), int(row[6])]
+            row = (str(row[1]), str(row[2]), str(row[3]), int(row[4]), int(row[5]), int(row[6]), int(row[7]))
         except:
             return character_id
         query = f'''
-            INSERT INTO Betrayal.Character VALUES (%d, %s, %d, %d, %d, %d, %d);
+            INSERT Betrayal.Character(PlayerID, CharacterName, TileID, Speed, Might, Sanity, Knowledge)
+            SELECT P.PlayerID, V.CharacterName, T.TileID, V.Speed, V.Might, V.Sanity, V.Knowledge
+            FROM (VALUES {row}) AS V(PlayerName, CharacterName, TileName, Speed, Might, Sanity, Knowledge)
+                INNER JOIN Betrayal.Player P ON P.PlayerName = V.PlayerName
+                INNER JOIN Betrayal.Tile T ON T.TileName = V.TileName
+            WHERE P.GameID = {game_id};
             '''
         cursor.execute(query, row)
         conn.commit()
