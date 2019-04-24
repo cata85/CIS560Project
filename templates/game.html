@@ -578,9 +578,9 @@
                   <td>{{ col }}</td>
                 {% endfor %}
                 {%if table_name == 'Player' %}
-                <!-- no update button for player-->
+                  <td><button data-toggle="modal"  class="btn btn-primary" disabled="true">UPDATE</button></td>
                 {%elif table_name == 'Game'%}
-                  <td><button data-toggle="modal" data-target="#update_game_modal" class="btn btn-primary">UPDATE</button></td>
+                  <td><button data-toggle="modal" data-target="#update_game_modal" class="btn btn-primary" name="{{entry.0}}">UPDATE</button></td>
                 {%elif table_name == 'Character'%}
                   <td><button data-toggle="modal" data-target="#update_character_modal" class="btn btn-primary">UPDATE</button></td>
                 {%elif table_name == 'Tile'%}
