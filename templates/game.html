@@ -122,9 +122,13 @@
     <form action="/game/{{ game_id }}/update/Game" method="POST">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Update Game Table</h4>
+        <h4 class="modal-title" onload="displayID(this)">Update Game Table</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group" >
+          <label>Game ID</label>
+          <input type="number" name="game_id" value="" id="update_game_modal_id" readonly>
+        </div>
         <div class="form-group">
             <div class="table-responsive">
                 <table class="table table-bordered ">
@@ -164,6 +168,10 @@
         <h4 class="modal-title">Update Character Table</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group" >
+          <label>Character ID</label>
+          <input type="number" name="game_id" value="" id="update_character_modal_id" readonly>
+        </div>
         <div class="form-group">
             <label>Tile Name</label>
             <select name='tile_name_character' class="form-control" id="exampleFormControlSelect1">
@@ -223,6 +231,11 @@
         <h4 class="modal-title">Update Tile Table</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group" >
+          <label>Tile ID</label>
+          <input type="number" name="game_id" value="" id="update_tile_modal_id" readonly>
+        </div>
+
         <div class="form-group">
           <label>Floor</label>
           <select name="floor_tile" class="form-control">
@@ -263,6 +276,10 @@
         <h4 class="modal-title">Update Item Table</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group" >
+          <label>Item ID</label>
+          <input type="number" name="game_id" value="" id="update_item_modal_id" readonly>
+        </div>
         <div class="form-group">
           <label>Tile Name</label>
           <select name="tile__name_item" class="form-control">
@@ -294,6 +311,10 @@
         <h4 class="modal-title">Update Monster Table</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group" >
+          <label>Monster ID</label>
+          <input type="number" name="game_id" value="" id="update_monster_modal_id" readonly>
+        </div>
         <div class="form-group">
           <label>Tile Name</label>
           <select name="tile__name_monster" class="form-control">
@@ -325,6 +346,10 @@
         <h4 class="modal-title">Update Card Table</h4>
       </div>
       <div class="modal-body">
+        <div class="form-group" >
+          <label>Card ID</label>
+          <input type="number" name="game_id" value="" id="update_card_modal_id" readonly>
+        </div>
         <div class="form-group">
           <label>State</label>
           <select name="state_card" class="form-control">
@@ -486,7 +511,7 @@
         <h4 class="modal-title">Insert into Item table</h4>
       </div>
 
-        <div class="modal-body"> <!----Column(s): ItemName, TileName <br>-->
+        <div class="modal-body"> <!--Column(s): ItemName, TileName <br>-->
           <div class="form-group">
             <label>Item Name</label>
             <select name="item_name_item" class="form-control">
@@ -526,7 +551,7 @@
         <h4 class="modal-title">Insert into Monster table</h4>
       </div>
 
-        <div class="modal-body"> <!----Column(s): MonsterName, TileName <br>-->
+        <div class="modal-body"> <!--Column(s): MonsterName, TileName <br>-->
           <div class="form-group">
             <label>Monster Name</label>
             <select name="monster_name_monster" class="form-control">
@@ -580,17 +605,17 @@
                 {%if table_name == 'Player' %}
                   <td><button data-toggle="modal"  class="btn btn-primary" disabled="true">UPDATE</button></td>
                 {%elif table_name == 'Game'%}
-                  <td><button data-toggle="modal" data-target="#update_game_modal" class="btn btn-primary" name="{{entry.0}}">UPDATE</button></td>
+                  <td><button data-toggle="modal" data-target="#update_game_modal" class="btn btn-primary" data-val="{{entry.0}}" onclick="saveGameID(this)">UPDATE</button></td>
                 {%elif table_name == 'Character'%}
-                  <td><button data-toggle="modal" data-target="#update_character_modal" class="btn btn-primary">UPDATE</button></td>
+                  <td><button data-toggle="modal" data-target="#update_character_modal" class="btn btn-primary"data-val="{{entry.0}}" onclick="saveCharacterID(this)">UPDATE</button></td>
                 {%elif table_name == 'Tile'%}
-                  <td><button data-toggle="modal" data-target="#update_tile_modal" class="btn btn-primary">UPDATE</button></td>
+                  <td><button data-toggle="modal" data-target="#update_tile_modal" class="btn btn-primary"data-val="{{entry.0}}" onclick="saveTileID(this)">UPDATE</button></td>
                 {%elif table_name == 'Item'%}
-                    <td><button data-toggle="modal" data-target="#update_item_modal" class="btn btn-primary">UPDATE</button></td>
+                    <td><button data-toggle="modal" data-target="#update_item_modal" class="btn btn-primary"data-val="{{entry.0}}" onclick="saveItemID(this)">UPDATE</button></td>
                 {%elif table_name == 'Monster'%}
-                    <td><button data-toggle="modal" data-target="#update_monster_modal" class="btn btn-primary">UPDATE</button></td>
+                    <td><button data-toggle="modal" data-target="#update_monster_modal" class="btn btn-primary"data-val="{{entry.0}}" onclick="saveMonsterID(this)">UPDATE</button></td>
                 {%elif table_name == 'Card'%}
-                    <td><button data-toggle="modal" data-target="#update_card_modal" class="btn btn-primary">UPDATE</button></td>
+                    <td><button data-toggle="modal" data-target="#update_card_modal" class="btn btn-primary"data-val="{{entry.0}}" onclick="saveCardID(this)">UPDATE</button></td>
                 {% endif %}
               </tr>
             {% endfor %}
@@ -613,6 +638,34 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+      function saveGameID(row) {
+        Rowid = row.getAttribute("data-val");
+        document.getElementById("update_game_modal_id").value = Rowid;
+      }
+      function saveCharacterID(row) {
+        Rowid = row.getAttribute("data-val");
+        document.getElementById("update_character_modal_id").value = Rowid;
+      }
+      function saveTileID(row) {
+        Rowid = row.getAttribute("data-val");
+        document.getElementById("update_tile_modal_id").value = Rowid;
+      }
+      function saveItemID(row) {
+        Rowid = row.getAttribute("data-val");
+        document.getElementById("update_item_modal_id").value = Rowid;
+      }
+      function saveMonsterID(row) {
+        Rowid = row.getAttribute("data-val");
+        document.getElementById("update_monster_modal_id").value = Rowid;
+      }
+      function saveCardID(row) {
+        Rowid = row.getAttribute("data-val");
+        document.getElementById("update_card_modal_id").value = Rowid;
+      }
+
+
+    </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
