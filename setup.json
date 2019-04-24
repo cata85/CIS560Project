@@ -441,19 +441,19 @@
         "Tiles": [
             {
                 "TileName": "Abandoned Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Attic",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Balcony",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Ballroom",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Basement Landing",
@@ -461,55 +461,55 @@
             },
             {
                 "TileName": "Bedroom",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Bloody Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Catacombs",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Chapel",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Charred Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Chasm",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Coal Chute",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Collapsed Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Conservatory",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Creaky Hallway",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Crypt",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Dining Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Dusty Hallway",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Entrance Hall",
@@ -521,19 +521,19 @@
             },
             {
                 "TileName": "Furnace Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Gallery",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Game Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Gardens",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Grand Staircase",
@@ -541,79 +541,79 @@
             },
             {
                 "TileName": "Graveyard",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Gymnasium",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Junk Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Kitchen",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Larder",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Library",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Master Bedroom",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Mystic Elevator",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Operating Laboratory",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Organ Room",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Patio",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Pentagram Chamber",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Research Laboratory",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Servants' Quarters",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Stairs From Basement",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Statuary Corridor",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Storeroom",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Tower",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Underground Lake",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Upper Landing",
@@ -621,11 +621,11 @@
             },
             {
                 "TileName": "Vault",
-                "Floor": "N/A"
+                "Floor": "NULL"
             },
             {
                 "TileName": "Wine Cellar",
-                "Floor": "N/A"
+                "Floor": "NULL"
             }
         ],
         "Characters": [
@@ -945,656 +945,656 @@
                     "GameID": "1",
                     "CardName": "ACUPUNCTURE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",	
                     "CardName": "BURIAL MOUND",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "GHOST IN THE MACHINE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "LIGHTNING STRIKES",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MIST FROM THE WALLS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "PHONE CALL",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "CardID": "7",
                     "GameID": "1",
                     "CardName": "REVOLVING WALL",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "HIDEOUS SHRIEK",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MYSTIC SLIDE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "HANGED MEN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "THE BECKONING",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SOMETHING HIDDEN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "GRAVE DIRT",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "THE WALLS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "ROTTEN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "IMAGE IN THE MIRROR",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MUTANT HOUSEPET",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "THE WALLS HAVE EYES",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "WHAT YEAR IS IT?",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "POSSESSION",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "IT IS MEANT TO BE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "FOOTSTEPS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CREEPY PUPPET",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SECRET STAIRS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SILENCE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "A MOMENT OF HOPE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "NIGHT VIEW",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "WHAT THE...?",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "ANGRY BEING",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "GROUNDSKEEPER",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "THE VOICE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "LIGHTS OUT",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "WEBS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SOMETHING SLIMY",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BURNING MAN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CLOSET DOOR",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SMOKE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SKELETONS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CREEPY CRAWLIES",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "WHOOPS!",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "LOCKED SAFE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "JONAH'S TURN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "THE LFET HAND",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "FLYTRAP",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MISTY ARCH",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CONTRACT",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SPIDER",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DRIP... DRIP... DRIP...",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SHRIEKING WIND",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DISQUIETING SOUNDS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "THE LOST ONE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "FUNERAL",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BLOODY VISION",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DEBRIS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SECRET PASSAGE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BOOMSTICK",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "LUCKY STONE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SACRIFICIAL DAGGER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SMELLING SALTS",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BOTTLE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "HEALING SALVE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "REVOLVER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "AMULET OF THE AGES",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "RABBIT'S FOOT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DARK DICE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "TEAPOT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "ADRENALINE SHOT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BELL",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "PUZZLE BOX",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "PICKPOCKET'S GLOVES",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CAMCORDER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BLUEPRINT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "LOCKET",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DEVICE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CHAINSAW",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CEREMONIAL ROBE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CHALK",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MUSIC BOX",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DYNAMITE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "AXE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "ANGEL FEATHER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "IDOL",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MEDICAL KIT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "ARMOR",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SNAKE OIL",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "EFFIGY",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BLOOD DAGGER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CANDLE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "GIRL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "HOLY SYMBOL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "RING",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "DOG",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MASK",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MEDALLION",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "KEY",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BLOODSTONE",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "LETTER",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "PHOTOGRAPH",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SPIRIT BOARD",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CRYSTAL BALL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "CAT",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "MADMAN",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "ROPE",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BOX",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BOOK",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SKULL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "SPEAR",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "VIAL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "1",
                     "CardName": "BITE",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 }
             ],
             [
@@ -1602,655 +1602,655 @@
                     "GameID": "2",
                     "CardName": "ACUPUNCTURE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",	
                     "CardName": "BURIAL MOUND",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "GHOST IN THE MACHINE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "LIGHTNING STRIKES",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MIST FROM THE WALLS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "PHONE CALL",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "REVOLVING WALL",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "HIDEOUS SHRIEK",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MYSTIC SLIDE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "HANGED MEN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "THE BECKONING",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SOMETHING HIDDEN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "GRAVE DIRT",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "THE WALLS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "ROTTEN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "IMAGE IN THE MIRROR",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MUTANT HOUSEPET",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "THE WALLS HAVE EYES",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "WHAT YEAR IS IT?",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "POSSESSION",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "IT IS MEANT TO BE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "FOOTSTEPS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CREEPY PUPPET",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SECRET STAIRS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SILENCE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "A MOMENT OF HOPE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "NIGHT VIEW",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "WHAT THE...?",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "ANGRY BEING",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "GROUNDSKEEPER",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "THE VOICE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "LIGHTS OUT",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "WEBS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SOMETHING SLIMY",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BURNING MAN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CLOSET DOOR",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SMOKE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SKELETONS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CREEPY CRAWLIES",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "WHOOPS!",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "LOCKED SAFE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "JONAH'S TURN",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "THE LFET HAND",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "FLYTRAP",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MISTY ARCH",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CONTRACT",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SPIDER",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DRIP... DRIP... DRIP...",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SHRIEKING WIND",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DISQUIETING SOUNDS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "THE LOST ONE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "FUNERAL",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BLOODY VISION",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DEBRIS",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SECRET PASSAGE",
                     "Type": "Event",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BOOMSTICK",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "LUCKY STONE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SACRIFICIAL DAGGER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SMELLING SALTS",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BOTTLE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "HEALING SALVE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "REVOLVER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "AMULET OF THE AGES",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "RABBIT'S FOOT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DARK DICE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "TEAPOT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "ADRENALINE SHOT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BELL",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "PUZZLE BOX",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "PICKPOCKET'S GLOVES",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CAMCORDER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BLUEPRINT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "LOCKET",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DEVICE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CHAINSAW",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CEREMONIAL ROBE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CHALK",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MUSIC BOX",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DYNAMITE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "AXE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "ANGEL FEATHER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "IDOL",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MEDICAL KIT",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "ARMOR",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SNAKE OIL",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "EFFIGY",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BLOOD DAGGER",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CANDLE",
                     "Type": "Item",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "GIRL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "HOLY SYMBOL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "RING",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "DOG",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MASK",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MEDALLION",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "KEY",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BLOODSTONE",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "LETTER",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "PHOTOGRAPH",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SPIRIT BOARD",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CRYSTAL BALL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "CAT",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "MADMAN",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "ROPE",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BOX",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BOOK",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SKULL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "SPEAR",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "VIAL",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 },
                 {
                     "GameID": "2",
                     "CardName": "BITE",
                     "Type": "Omen",
-                    "State": "NotPlayed"
+                    "State": "Not Played"
                 }
             ]
         ],
