@@ -110,7 +110,7 @@ def update(conn, row):
         query = f'''
             UPDATE Betrayal.Tile
             SET 
-                Floor = {row[2]}
+                Floor = {row[2]},
                 State = {row[3]}
             WHERE TileID = {row[1]}
             '''

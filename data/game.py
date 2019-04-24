@@ -107,7 +107,7 @@ def update(conn, row):
         query = f'''
             UPDATE Betrayal.Game
             SET    
-                Haunt = {row[2]}
+                Haunt = {row[2]},
                 TrackValue = {row[3]} 
             WHERE GameID = {row[1]}
             '''
