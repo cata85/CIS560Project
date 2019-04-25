@@ -1,4 +1,5 @@
 import pymssql
+import _mssql
 
 
 # Creates the Character table.
@@ -122,26 +123,32 @@ def update(conn, row):
     character_id = -1
     if row:
         try:
-            row = (int(row[1]), str(row[2]), int(row[3]), int(row[4]), int(row[5]), int(row[6]))
+            row = (int(row[0]), str(row[1]), int(row[2]), int(row[3]), int(row[4]), int(row[5]), int(row[6]))
         except:
             return character_id
         query = f'''
             UPDATE Betrayal.Character
             SET 
-                TileID = T.TileID,
-                Speed = {row[3]},
-                Might = {row[4]},
-                Sanity = {row[5]},
-                Knowledge = {row[6]}
-            FROM Betrayal.Tile T
-                INNER JOIN Betrayal.Monster M ON T.TileID = M.TileID
-            WHERE C.CharacterID = {row[1]} AND T.TileName = {row[2]}
+                TileID = 
+                    (
+                        SELECT T.TileID
+                        FROM Betrayal.Tile T
+                        WHERE T.TileName = N'{row[1]}' AND T.GameID = {row[2]}
+                    ),
+                Speed = {row[2]},
+                Might = {row[3]},
+                Sanity = {row[4]},
+                Knowledge = {row[5]}
+            FROM Betrayal.Character C
+            WHERE C.CharacterID = {row[0]}
             '''
         try:
+            print(query)
             cursor.execute(query)
             conn.commit()
             character_id = cursor.lastrowid
-        except:
+        except _mssql.MSSQLDatabaseException as e:
+            print(e)
             cursor.close()
             return character_id
     else:

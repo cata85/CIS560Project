@@ -1,4 +1,5 @@
 import pymssql
+import _mssql
 
 
 # Creates the Card table.
@@ -104,19 +105,21 @@ def update(conn, row):
     card_id = -1
     if row:
         try:
-            row = (str(row[1]), str(row[2]))
+            row = (str(row[0]), str(row[1]))
         except:
             return card_id
         query = f'''
-            UPDATE Betrayal.Monster
-            SET State = {row[2]}
-            WHERE CardID = {row[1]}
+            UPDATE Betrayal.Card
+            SET State = N'{row[1]}'
+            WHERE CardID = N'{row[0]}'
             '''
         try:
+            print(query)
             cursor.execute(query)
             conn.commit()
             card_id = cursor.lastrowid
-        except:
+        except _mssql.MSSQLDatabaseException as e:
+            print(e)
             cursor.close
             return card_id
     else:

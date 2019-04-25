@@ -1,4 +1,5 @@
 import pymssql
+import _mssql
 
 
 # Creates the Game table.
@@ -101,21 +102,23 @@ def update(conn, row):
     game_id = -1
     if row:
         try:
-            row = (int(row[1]), int(row[2]), int(row[3]))
+            row = (int(row[0]), int(row[1]), int(row[2]))
         except:
             return game_id
         query = f'''
             UPDATE Betrayal.Game
             SET    
-                Haunt = {row[2]},
-                TrackValue = {row[3]} 
-            WHERE GameID = {row[1]}
+                Haunt = {row[1]},
+                TrackValue = {row[2]} 
+            WHERE GameID = {row[0]}
             '''
         try:
+            print(query)
             cursor.execute(query)
             conn.commit()
             game_id = cursor.lastrowid
-        except:
+        except _mssql.MSSQLDatabaseException as e:
+            print(e)
             cursor.close()
             return game_id
     else:
