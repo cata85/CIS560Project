@@ -38,10 +38,10 @@ def join():
 
 # Generates the requested game page
 @app.route('/game/<int:game_id>', methods=['GET'])
-def game(game_id, rows=None, column_names=None, players=None, characters=config.CHARACTERS,
-        tiles=config.TILES, items=config.ITEMS, monsters=config.MONSTERS):
+def game(game_id, rows=None, column_names=None, players=None, response=None,
+        characters=config.CHARACTERS, tiles=config.TILES, items=config.ITEMS, monsters=config.MONSTERS):
     players = helpers.get_players(conn, handler['Player'], game_id)
-    return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names,
+    return render_template('game.html', game_id=game_id, rows=rows, column_names=column_names, response=response,
         players=players, characters=characters, tiles=tiles, items=items, monsters=monsters)
 
 
@@ -67,18 +67,18 @@ def insert(game_id, table):
         handler_key = handler[table]
         if table == 'Player':
             row = (game_id, request.form['player_name_player'])
-            data.insert_one(conn, handler_key, row)
+            response = data.insert_one(conn, handler_key, row)
         elif table == 'Character':
             row = (game_id, request.form['player_name_character'], request.form['character_name_character'], request.form['tile_name_character'],
                 request.form['speed_character'], request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
-            data.insert_one(conn, handler_key, row, game_id)
+            response = data.insert_one(conn, handler_key, row, game_id)
         elif table == 'Item':
             row = (game_id, request.form['tile_name_item'], request.form['item_name_item'])
-            data.insert_one(conn, handler_key, row, game_id)
+            response = data.insert_one(conn, handler_key, row, game_id)
         elif table == 'Monster':
             row = (game_id, request.form['tile_name_monster'], request.form['monster_name_monster'])
-            data.insert_one(conn, handler_key, row, game_id)
-    return redirect(url_for('game', game_id=game_id))
+            response = data.insert_one(conn, handler_key, row, game_id)
+    return redirect(url_for('game', game_id=game_id, response=response))
 
 
 # Updates the selected row for a given table.
@@ -90,7 +90,7 @@ def update(game_id, table):
         if table == 'Game':
             update_game_id = request.form['update_game_id']
             row = (update_game_id, request.form['haunt_game'], request.form['track_value_game'])
-            data.update(conn, handler_key, row)
+            response = data.update(conn, handler_key, row)
         elif table == 'Character':
             update_character_id = request.form['update_character_id']
             row = (update_character_id, request.form['tile_name_character'], request.form['speed_character'], request.form['might_character'], 
@@ -99,20 +99,20 @@ def update(game_id, table):
         elif table == 'Tile':
             update_tile_id = request.form['update_tile_id']
             row = (update_tile_id, request.form['floor_tile'], request.form['state_tile'])
-            data.update(conn, handler_key, row)
+            response = data.update(conn, handler_key, row)
         elif table == 'Item':
             update_item_id = request.form['update_item_id']
             row = (update_item_id, request.form['tile__name_item'], game_id)
-            data.update(conn, handler_key, row)
+            response = data.update(conn, handler_key, row)
         elif table == 'Monster':
             update_monster_id = request.form['update_monster_id']
             row = (update_monster_id, request.form['tile__name_monster'], game_id)
-            data.update(conn, handler_key, row)
+            response = data.update(conn, handler_key, row)
         elif table == 'Card':
             update_card_id = request.form['update_card_id']
             row = (update_card_id, request.form['state_card'])
-            data.update(conn, handler_key, row)
-    return redirect(url_for('game', game_id=game_id))
+            response = data.update(conn, handler_key, row)
+    return redirect(url_for('game', game_id=game_id, response=response))
 
 
 # Handles the case when the user presses Ctrl+C.

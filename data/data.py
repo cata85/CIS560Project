@@ -50,4 +50,5 @@ def get_column_names(handler_key):
 
 # Updates a single element in a column where id is the key, row holds all the data necessary for the update
 def update(conn, handler_key, row):
-    handler_key['Update'](conn, row)
+    id = handler_key['Update'](conn, row)
+    return id

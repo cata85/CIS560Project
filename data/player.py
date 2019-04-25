@@ -42,9 +42,13 @@ def insert_one(conn, row, game_id):
         query = f'''
             INSERT INTO Betrayal.Player VALUES (%d, %s)
             '''
-        cursor.execute(query, row)
-        conn.commit()
-        player_id = cursor.lastrowid
+        try:
+            cursor.execute(query, row)
+            conn.commit()
+            player_id = cursor.lastrowid
+        except:
+            cursor.close()
+            return player_id
     else:
         print('ERROR: Cannot set default values for table Player. Must give foreign key and name.')
     cursor.close()
