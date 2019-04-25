@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></link>
    <link rel="stylesheet" href="{{ url_for('static', filename='css/game.css') }}">
-
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
   <body>
@@ -20,8 +21,14 @@
     <h1 class="display-4">Game Selection</h1>
     <hr class="dark">
     <div class="form-horizontal text-center" id="gameIDForm">
+      <div class="container">
       <div class="form-group">
-        <form action="/join" method="POST">
+        <div class="col-md-8 offset-md-2">
+          <div id="msgI" class="alert alert-info d-none" role="alert">
+              <i class="fas fa-info-circle"></i> The game is initializing... Please wait....
+          </div>
+        </div>
+        <form id="formID" action="/join" method="POST">
           <div id="textboxpadding">
             <!-- <input type="text" name="gameIDtextbox" class="form-control" id="gameIDtextbox" placeholder="GameID"> -->
             <select name="game_select" class="form-control">
@@ -34,13 +41,24 @@
         </form>
         <form action="/join" method="GET">
           <button type="submit" class="btn btn-secondary" id="gameID_New_btn">NEW</button></a>
+         
+
         </form>
       </div>
+    </div>
     </div>
   </div>
 </div>
 </div>
 
+<script>
+
+$('#gameID_New_btn').click(function(){
+  alert('PASSED')
+  $('#formID').submit();
+ });
+
+</script>
 
 
 
@@ -56,8 +74,8 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   
+    <!----script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </body>
 </html>
