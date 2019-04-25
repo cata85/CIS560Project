@@ -22,7 +22,8 @@ def insert_initial_values(conn, handler, INIT):
         data.insert_many(conn, handler['Card'], cards)
         data.insert_many(conn, handler['Player'], players)
         data.insert_many(conn, handler['Tile'], tiles)
-    characters = list((int(character['PlayerID']), character['CharacterName'], int(character['TileID']), int(character['Speed']), int(character['Might']), int(character['Sanity']), int(character['Knowledge'])) for character in INIT['Characters'])
+    characters = list((int(character['PlayerID']), character['CharacterName'], int(character['TileID']), int(character['Speed']), 
+        int(character['Might']), int(character['Sanity']), int(character['Knowledge'])) for character in INIT['Characters'])
     monsters = list((int(monster['TileID']), monster['MonsterName']) for monster in INIT['Monsters'])
     items = list((int(item['TileID']), item['ItemName']) for item in INIT['Items'])
     data.insert_many(conn, handler['Character'], characters)
