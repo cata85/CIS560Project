@@ -1,4 +1,5 @@
 import pymssql
+import _mssql
 
 
 # Creates the Monster table.
@@ -106,21 +107,27 @@ def update(conn, row):
     monster_id = -1
     if row:
         try:
-            row = (int(row[1]), str(row[2]))
+            row = (int(row[0]), str(row[1]), int(row[2]))
         except:
             return monster_id
         query = f'''
             UPDATE Betrayal.Monster
-            SET TileID = T.TileID
-            FROM Betrayal.Tile T
-                INNER JOIN Betrayal.Monster M ON T.TileID = M.TileID
-            WHERE I.ItemID = {row[1]} AND T.TileName = {row[2]}
+            SET TileID = 
+                (
+                    SELECT T.TileID
+                    FROM Betrayal.Tile T
+                    WHERE T.TileName = N'{row[1]}' AND T.GameID = {row[2]}
+                )
+            FROM Betrayal.Monster M
+            WHERE M.MonsterID = {row[0]}
             '''
         try:
+            print(query)
             cursor.execute(query)
             conn.commit()
             monster_id = cursor.lastrowid
-        except:
+        except _mssql.MSSQLDatabaseException as e:
+            print(e)
             cursor.close
             return monster_id
     else:

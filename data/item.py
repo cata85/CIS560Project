@@ -1,4 +1,5 @@
 import pymssql
+import _mssql
 
 
 # Creates the Item table.
@@ -106,21 +107,27 @@ def update(conn, row):
     item_id = -1
     if row:
         try:
-            row = (int(row[1]), str(row[2]))
+            row = (int(row[0]), str(row[1]), int(row[2]))
         except:
             return item_id
         query = f'''
             UPDATE Betrayal.Item
-            SET TileID = T.TileID
-            FROM Betrayal.Tile T
-                INNER JOIN Betrayal.Item I ON T.TileID = I.TileID
-            WHERE I.ItemID = {row[1]} AND T.TileName = {row[2]}
+            SET TileID = 
+                (
+                    SELECT T.TileID
+                    FROM Betrayal.Tile T
+                    WHERE T.TileName = N'{row[1]}' AND T.GameID = {row[2]}
+                )
+            FROM Betrayal.Item I
+            WHERE I.ItemID = {row[0]}
             '''
         try:
+            print(query)
             cursor.execute(query)
             conn.commit()
             item_id = cursor.lastrowid
-        except:
+        except _mssql.MSSQLDatabaseException as e:
+            print(e)
             cursor.close
             return item_id
     else:

@@ -1,4 +1,5 @@
 import pymssql
+import _mssql
 
 
 # Creates the Tile table.
@@ -104,21 +105,23 @@ def update(conn, row):
     tile_id = -1
     if row:
         try:
-            row = (int(row[1]), str(row[2]), str(row[3]))
+            row = (int(row[0]), str(row[1]), str(row[2]))
         except:
             return tile_id
         query = f'''
             UPDATE Betrayal.Tile
             SET 
-                Floor = {row[2]},
-                State = {row[3]}
-            WHERE TileID = {row[1]}
+                Floor = N'{row[1]}',
+                State = N'{row[2]}'
+            WHERE TileID = {row[0]}
             '''
         try:
+            print(query)
             cursor.execute(query)
             conn.commit()
             tile_id = cursor.lastrowid
-        except:
+        except _mssql.MSSQLDatabaseException as e:
+            print(e)
             cursor.close
             return tile_id
     else:

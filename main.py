@@ -93,8 +93,8 @@ def update(game_id, table):
             data.update(conn, handler_key, row)
         elif table == 'Character':
             update_character_id = request.form['update_character_id']
-            row = (update_character_id, request.form['tile_name_character'], request.form['speed_character'], 
-                request.form['might_character'], request.form['sanity_character'], request.form['knowledge_character'])
+            row = (update_character_id, request.form['tile_name_character'], request.form['speed_character'], request.form['might_character'], 
+                request.form['sanity_character'], request.form['knowledge_character'], game_id)
             data.update(conn, handler_key, row)
         elif table == 'Tile':
             update_tile_id = request.form['update_tile_id']
@@ -102,11 +102,11 @@ def update(game_id, table):
             data.update(conn, handler_key, row)
         elif table == 'Item':
             update_item_id = request.form['update_item_id']
-            row = (update_item_id, request.form['tile__name_item'])
+            row = (update_item_id, request.form['tile__name_item'], game_id)
             data.update(conn, handler_key, row)
         elif table == 'Monster':
             update_monster_id = request.form['update_monster_id']
-            row = (update_monster_id, request.form['tile__name_monster'])
+            row = (update_monster_id, request.form['tile__name_monster'], game_id)
             data.update(conn, handler_key, row)
         elif table == 'Card':
             update_card_id = request.form['update_card_id']
