@@ -441,19 +441,19 @@
         "Tiles": [
             {
                 "TileName": "Abandoned Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Attic",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Balcony",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Ballroom",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Basement Landing",
@@ -461,55 +461,55 @@
             },
             {
                 "TileName": "Bedroom",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Bloody Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Catacombs",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Chapel",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Charred Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Chasm",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Coal Chute",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Collapsed Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Conservatory",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Creaky Hallway",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Crypt",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Dining Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Dusty Hallway",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Entrance Hall",
@@ -521,19 +521,19 @@
             },
             {
                 "TileName": "Furnace Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Gallery",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Game Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Gardens",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Grand Staircase",
@@ -541,79 +541,79 @@
             },
             {
                 "TileName": "Graveyard",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Gymnasium",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Junk Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Kitchen",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Larder",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Library",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Master Bedroom",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Mystic Elevator",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Operating Laboratory",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Organ Room",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Patio",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Pentagram Chamber",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Research Laboratory",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Servants' Quarters",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Stairs From Basement",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Statuary Corridor",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Storeroom",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Tower",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Underground Lake",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Upper Landing",
@@ -621,11 +621,11 @@
             },
             {
                 "TileName": "Vault",
-                "Floor": "NULL"
+                "Floor": "None"
             },
             {
                 "TileName": "Wine Cellar",
-                "Floor": "NULL"
+                "Floor": "None"
             }
         ],
         "Characters": [
