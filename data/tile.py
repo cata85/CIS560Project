@@ -14,7 +14,7 @@ def create_table(conn):
                 REFERENCES Betrayal.Game(GameID),
             TileName NVARCHAR(32) NOT NULL,
             Floor NVARCHAR(8) NULL DEFAULT(NULL),
-            State NVARCHAR(10) NOT NULL DEFAULT(N'Not Player'),
+            State NVARCHAR(10) NOT NULL DEFAULT(N'Not Played'),
 			
             UNIQUE
             (
