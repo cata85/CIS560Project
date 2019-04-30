@@ -133,7 +133,7 @@ def update(conn, row):
                     (
                         SELECT T.TileID
                         FROM Betrayal.Tile T
-                        WHERE T.TileName = N'{row[1]}' AND T.GameID = {row[2]}
+                        WHERE T.TileName = N'{row[1]}' AND T.GameID = {row[6]}
                     ),
                 Speed = {row[2]},
                 Might = {row[3]},
