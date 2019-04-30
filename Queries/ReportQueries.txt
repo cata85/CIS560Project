@@ -1,0 +1,50 @@
+Report Query 1
+CREATE PROCEDURE CheckStats @gameid int
+AS
+SELECT C.CharacterID, C.CharacterName, DENSE_RANK()OVER(ORDER BY C.Speed DESC) AS SpeedRanking,
+    DENSE_RANK()OVER(ORDER BY C.Might DESC) AS MightRanking,
+    DENSE_RANK()OVER(ORDER BY C.Sanity DESC) AS SanityRanking,
+    DENSE_RANK()OVER(ORDER BY C.Knowledge DESC) AS KnowledgeRanking,
+    CONVERT(NUMERIC(10, 2), ((C.Might+C.Sanity+C.Speed+C.Knowledge)/4.0)) AS StatAverage
+FROM Betrayal.Game G
+    INNER JOIN Betrayal.Player P ON P.GameID = G.GameID
+    INNER JOIN Betrayal.Character C ON C.PlayerID = P.PlayerID
+WHERE G.GameID = @gameid
+GROUP BY C.CharacterID, C.CharacterName, C.Speed, C.Might, C.Sanity, C.Knowledge
+ORDER BY StatAverage DESC
+GO;
+
+EXEC CheckStats 2;
+
+Report Query 2
+CREATE PROCEDURE PlayerStats
+AS 
+SELECT 
+    P.PlayerName,
+    COUNT (*) AS NumberOfGames,
+    COUNT (DISTINCT C.CharacterName) AS UniqueCharacters
+FROM Betrayal.Player P
+    INNER JOIN Betrayal.Game G ON G.GameID = P.GameID
+    INNER JOIN Betrayal.[Character] C ON C.PlayerID = P.PlayerID
+GROUP BY P.PlayerName
+ORDER BY P.PlayerName ASC;
+
+EXEC PlayerStats;
+
+Report Query 3
+SELECT Haunt, FORMAT((COUNT(GameID) * 100) / 
+	(
+		SELECT COUNT(GameID) 
+		FROM Betrayal.Game
+	) * .01, 'P') AS HauntUsePercentage
+FROM Betrayal.Game
+GROUP BY Haunt
+ORDER BY Haunt ASC
+
+Report Query 4
+SELECT G.GameID, P.PlayerName, C.CharacterName, T.TileName
+FROM Betrayal.Game G 
+INNER JOIN Betrayal.[Player] P ON G.GameID =P.GameID 
+INNER JOIN Betrayal.[Character] C ON P.PlayerID=C.PlayerID
+INNER JOIN Betrayal.Tile T ON G.GameID=T.GameID
+WHERE T.TileName = 'Basement Landing'
