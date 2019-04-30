@@ -95,7 +95,7 @@ def update(game_id, table):
             update_character_id = request.form['update_character_id']
             row = (update_character_id, request.form['tile_name_character'], request.form['speed_character'], request.form['might_character'], 
                 request.form['sanity_character'], request.form['knowledge_character'], game_id)
-            data.update(conn, handler_key, row)
+            response = data.update(conn, handler_key, row)
         elif table == 'Tile':
             update_tile_id = request.form['update_tile_id']
             row = (update_tile_id, request.form['floor_tile'], request.form['state_tile'])
